@@ -1,0 +1,59 @@
+.properties h2 {
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 42px;
+}
+
+.properties {
+  margin-bottom: 49px;
+}
+
+.properties__description {
+  width: 200px;
+}
+
+.properties__item {
+  display: flex;
+  gap: 20px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.leaf {
+  background-image: url("../img/icon_leaf.svg");
+  width: 60px;
+  height: 60px;
+}
+
+.water {
+  background-image: url("../img/icon_water.svg");
+  width: 60px;
+  height: 60px;
+}
+
+.cutlery {
+  background-image: url("../img/icon_cutlery.svg");
+  width: 60px;
+  height: 60px;
+}
+
+.scales {
+  background-image: url("../img/icon_scales.svg");
+  width: 60px;
+  height: 60px;
+}
+
+.properties__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 246px 246px;
+    // gap: 37px;
+    // width: 708px;
+  }
+}
