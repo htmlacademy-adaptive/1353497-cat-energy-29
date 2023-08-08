@@ -42,40 +42,40 @@
     </header>
     <main>
       <section class="selection">
-        <h2>подбор программы</h2>
+        <h1 class="selection__title">Подбор программы</h1>
         <p>заполните анкету, и мы подберем
           программу питания для вашего кота</p>
         <div class="selection-form">
-          <label class="form__item">
-            <legend class="form__label">имя:*</legend>
-            <input class="form__field" name="" placeholder="барсик">
+          <label class="selection-form__item">
+            <legend class="selection-form__label">имя:*</legend>
+            <input class="selection-form__field" name="name" placeholder="барсик">
           </label>
-          <label class="form__item">
-            <legend class="form__label">вес (кг):*</legend>
-            <input class="form__field" name="" placeholder="7">
+          <label class="selection-form__item">
+            <legend class="selection-form__label">вес (кг):*</legend>
+            <input class="form__field" name="weight" placeholder="7">
           </label>
-          <label class="form__item">
-            <legend class="form__label">возраст (лет):</legend>
-            <input class="form__field" name="" placeholder="7">
+          <label class="selection-form__item">
+            <legend class="selection-form__label">возраст (лет):</legend>
+            <input class="selection-form__field" name="age" placeholder="7">
           </label>
         </div>
-        <div class="filter">
-          <ul class="filter-list">
-            <li class="filter-list__item">
+        <div class="selection-filter">
+          <ul class="selection-filter__list">
+            <li class="selection-filter__item">
               <label class="control">
                 <input class="visually-hidden control__input" type="radio" name="control-group" value="decrease" checked="">
                 <span class="control__mark"></span>
                 <span class="control__label">похудение</span>
               </label>
             </li>
-            <li class="filter-list__item">
+            <li class="selection-filter__item">
               <label class="control">
                 <input class="visually-hidden control__input" type="radio" name="control-group" value="increase">
                 <span class="control__mark"></span>
                 <span class="control__label">набор массы</span>
               </label>
             </li>
-            <li class="filter-list__item">
+            <li class="selection-filter__item">
               <label class="control">
                 <input class="visually-hidden control__input" type="radio" name="control-group" value="uncertainty">
                 <span class="control__mark"></span>
@@ -84,76 +84,76 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="contacts-form">
-        <h2>Контактные данные
-          (владельца кота)</h2>
-        <label class="form__item">
-          <legend class="form__label">E-mail:*</legend>
-          <input class="form__field" name="mail" placeholder="kuklachev@gmail.com">
-        </label>
-        <label class="form__item">
-          <legend class="form__label">Телефон:*</legend>
-          <input class="form__field" name="phone" placeholder="8 (960) 900-60-90">
-        </label>
-      </section>
-      <section class="comment-form">
-        <h2>Комментарий</h2>
-        <label class="form__item">
-          <input class="form__field" name="comment" placeholder="расскажите обо всех повадках кота">
-        </label>
-      </section>
-      <fieldset class="products">
-        <legend class="products__title">Дополнительно:</legend>
-        <ul class="products__list">
-          <li class="list__item">
-            <label class="control">
-                <input class="control__input visually-hidden" type="checkbox" name="sugar" checked="">
+        <div class="selection-contacts">
+          <h2>Контактные данные
+            (владельца кота)</h2>
+          <label class="selection-contacts__item">
+            <legend class="selection-contacts__label">E-mail:*</legend>
+            <input class="selection-contacts__field" name="mail" placeholder="kuklachev@gmail.com">
+          </label>
+          <label class="selection-contacts__item">
+            <legend class="selection-contacts__label">Телефон:*</legend>
+            <input class="selection-contacts__field" name="phone" placeholder="8 (960) 900-60-90">
+          </label>
+        </div>
+        <div class="selection-comment">
+          <h2>Комментарий</h2>
+          <label class="selection-comment__item">
+            <input class="selection-comment__field" name="comment" placeholder="расскажите обо всех повадках кота">
+          </label>
+        </div>
+        <fieldset class="selection-products">
+          <legend class="selection-products__title">Дополнительно:</legend>
+          <ul class="selection-products__list">
+            <li class="selection-products__item">
+              <label class="control">
+                  <input class="control__input visually-hidden" type="checkbox" name="sugar" checked="">
+                  <span class="control__mark"></span>
+                  <span class="control__label">сахарозаменитель</span>
+              </label>
+            </li>
+            <li class="list__item">
+              <label class="control">
+                <input class="control__input visually-hidden" type="checkbox" name="water">
                 <span class="control__mark"></span>
-                <span class="control__label">сахарозаменитель</span>
-            </label>
-          </li>
-          <li class="list__item">
-            <label class="control">
-              <input class="control__input visually-hidden" type="checkbox" name="water">
-              <span class="control__mark"></span>
-              <span class="control__label">питьевая вода</span>
-          </label>
-          </li>
-          <li class="list__item">
-            <label class="control">
-              <input class="control__input visually-hidden" type="checkbox" name="milk">
-              <span class="control__mark"></span>
-              <span class="control__label">молоко</span>
-          </label>
-          <li class="list__item">
-            <label class="control">
-              <input class="control__input visually-hidden" type="checkbox" name="vitamins">
-              <span class="control__mark"></span>
-              <span class="control__label">витамины</span>
-          </label>
-          </li>
-        </ul>
+                <span class="control__label">питьевая вода</span>
+              </label>
+            </li>
+            <li class="list__item">
+              <label class="control">
+                <input class="control__input visually-hidden" type="checkbox" name="milk">
+                <span class="control__mark"></span>
+                <span class="control__label">молоко</span>
+              </label>
+            <li class="list__item">
+              <label class="control">
+                <input class="control__input visually-hidden" type="checkbox" name="vitamins">
+                <span class="control__mark"></span>
+                <span class="control__label">витамины</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
         <button class="button" type="submit">отправить заявку</button>
-        <p class="stats__legend">
-            * — приведённые данные ложь
-        </p>
-      </fieldset>
+        <span class="stats-legend">
+          * — Обязательные поля
+        </span>
+      </section>
       <section class="contacts">
-        <div class="news__wrapper">
-          <h2 class="news__title">приглашаем к сотрудничеству дилеров!</h2>
-          <p class="adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="contacts__wrapper">
+          <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <div class="contacts__map">
+          <img src="img/map.jpg" width="320" height="362"
+            alt="Карта, на которой отмечено место нахождения компании Кэт энерджи.">
         </div>
       </section>
-      <div class="map">
-        <img class="slider__item" src="img/map.jpg" width="320" height="362"
-          alt="Карта, на которой отмечено место нахождения компании Кэт энерджи.">
-      </div>
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__logo">
-          <a class="main-footer__logo-text">
+          <a class="main-footer__logo-link">
             <img class="main-footer__logo-text" src="img/logotype-text.svg" width="128" height="24"
             alt="Название сайта Кэт энерджи.">
           </a>
@@ -162,30 +162,36 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Переход на социальную сеть вконтакте.</span>
+                <div class="social__icon social__icon--vkontakte"></div>
+                <!-- <span class="visually-hidden">Переход на социальную сеть вконтакте.</span> -->
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Переход на видеохостинг ютуб.</span>
+                <div class="social__icon social__icon--youtube"></div>
+                <!-- <span class="visually-hidden">Переход на видеохостинг ютуб.</span> -->
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Переход в мессенджер телеграмм.</span>
+                <div class="social__icon social__icon--telegram"></div>
+                <!-- <span class="visually-hidden">Переход в мессенджер телеграмм.</span> -->
               </a>
             </li>
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">Переход на сайт html-academy.</span>
-          </a>
+          <p class="copyright__title">HTML Academy
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <!-- <span class="visually-hidden">Переход на сайт html-academy.</span> -->
+            </a>
+          </p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">Переход на сайт html-academy.</span>
+            <div class="copyright__icon"></div>
+            <!-- <span class="visually-hidden">Переход на сайт html-academy.</span> -->
           </a>
         </div>
       </div>
-  </footer>
+    </footer>
   </body>
 </html>

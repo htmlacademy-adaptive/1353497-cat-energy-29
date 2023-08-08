@@ -1,22 +1,33 @@
 .contacts {
+  background: #f2f2f2;
+
   @media (min-width: @tablet-width) {
     width: 708px;
   }
 }
 
-.dealers__title {
-  color: #111111;
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
+.contacts p {
+  margin: 0;
+  padding: 0;
 }
 
-.dealers {
+.contacts__wrapper {
   display: flex;
   padding: 26px 0;
 
   @media (min-width: @tablet-width) {
     gap: 308px;
   }
+}
+
+.contacts__title {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.contacts__adress {
+  color: #444444;
+  font-family: "Lato", sans-serif;
+  line-height: 20px;
 }

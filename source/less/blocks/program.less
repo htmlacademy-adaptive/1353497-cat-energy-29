@@ -1,8 +1,47 @@
+.program__icon--walking {
+  background-image: url("../img/cat_walking.svg");
+  width: 67px;
+  height: 50px;
+  margin: 0 20px;
+}
+
+.program__icon--sitting {
+  background-image: url("../../img/cat_sitting.svg");
+  width: 50px;
+  height: 53px;
+  margin: 0 20px;
+}
+
 .program {
   width: 280px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     width: 708px;
+  }
+}
+
+.program p {
+  color: #444444;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 38px;
+}
+
+.program__item {
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.program__wrapper {
+  display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  .program__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }
