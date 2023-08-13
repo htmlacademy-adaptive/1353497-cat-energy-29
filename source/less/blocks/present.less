@@ -1,13 +1,31 @@
 .present {
-  background: #68b738d9;
+  background-image: linear-gradient(#68b738d9 100%, #ffffff 60%), url("../../img/cat_case.png");
+  background-repeat: no-repeat;
+  background-size: auto 320px;
   width: 279px;
   height: 289px;
-}
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  justify-content: center;
 
-.present__description {
-  color: #ffffff;
-  text-align: center;
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
+  &__description {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    width: 161px;
+    margin: 0 auto;
+  }
+
+  &__icon {
+    background-image: url("../../img/present__icon.svg");
+    background-repeat: no-repeat;
+    width: 78px;
+    height: 80px;
+  }
 }

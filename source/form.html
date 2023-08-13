@@ -7,43 +7,45 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo">
-        <img class="main-header__logo-image" src="img/logotype-mobile.svg" width="33" height="38"
-        alt="Логотип сайта Кэт энерджи.">
-      </a>
-      <a class="main-header__logo-text">
-        <img class="main-header__logo-text" src="img/logotype-text.svg" width="101" height="18"
-        alt="Название сайта Кэт энерджи.">
-      </a>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="list__item">
-              <a href="index.html">
-                главная
-              </a>
-            </li>
-            <li class="list__item">
-              <a href="catalog.html">
-                каталог продукции
-              </a>
-            </li>
-            <li class="list__item">
-              <a href="form.html">
-                подбор программы
-              </a>
-            </li>
-          </ul>
-        </div>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </nav>
+      <div class="main-header__wrapper">
+        <a class="main-header__logo-link">
+          <img class="main-header__logo-image" src="img/logotype-mobile.svg" width="33" height="38"
+          alt="Логотип сайта Кэт энерджи.">
+        </a>
+        <a class="main-header__logo-link">
+          <img class="main-header__logo-text" src="img/logotype-text.svg" width="101" height="18"
+          alt="Название сайта Кэт энерджи.">
+        </a>
+      </div>
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__toggle" type="button">
+            <!-- <span class="visually-hidden">Открыть меню</span> -->
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a href="index.html">
+                  главная
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="catalog.html">
+                  каталог продукции
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">
+                  подбор программы
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
     </header>
     <main>
       <section class="selection">
-        <h1 class="selection__title">Подбор программы</h1>
-        <p>заполните анкету, и мы подберем
+        <h1 class="selection__main-title">Подбор программы</h1>
+        <p>заполните анкету, и мы подберем<br>
           программу питания для вашего кота</p>
         <div class="selection-form">
           <label class="selection-form__item">
@@ -52,7 +54,7 @@
           </label>
           <label class="selection-form__item">
             <legend class="selection-form__label">вес (кг):*</legend>
-            <input class="form__field" name="weight" placeholder="7">
+            <input class="selection-form__field" name="weight" placeholder="7">
           </label>
           <label class="selection-form__item">
             <legend class="selection-form__label">возраст (лет):</legend>
@@ -85,7 +87,7 @@
           </ul>
         </div>
         <div class="selection-contacts">
-          <h2>Контактные данные
+          <h2 class="selection-contacts__block-title">Контактные данные
             (владельца кота)</h2>
           <label class="selection-contacts__item">
             <legend class="selection-contacts__label">E-mail:*</legend>
@@ -112,20 +114,20 @@
                   <span class="control__label">сахарозаменитель</span>
               </label>
             </li>
-            <li class="list__item">
+            <li class="selection-products__item">
               <label class="control">
                 <input class="control__input visually-hidden" type="checkbox" name="water">
                 <span class="control__mark"></span>
                 <span class="control__label">питьевая вода</span>
               </label>
             </li>
-            <li class="list__item">
+            <li class="selection-products__item">
               <label class="control">
                 <input class="control__input visually-hidden" type="checkbox" name="milk">
                 <span class="control__mark"></span>
                 <span class="control__label">молоко</span>
               </label>
-            <li class="list__item">
+            <li class="selection-products__item">
               <label class="control">
                 <input class="control__input visually-hidden" type="checkbox" name="vitamins">
                 <span class="control__mark"></span>
@@ -134,10 +136,12 @@
             </li>
           </ul>
         </fieldset>
-        <button class="button" type="submit">отправить заявку</button>
-        <span class="stats-legend">
-          * — Обязательные поля
-        </span>
+        <div class="application-wrapper">
+          <button class="button button__application" type="submit">отправить заявку</button>
+          <span class="stats-legend">
+            * — Обязательные поля
+          </span>
+        </div>
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">
@@ -145,8 +149,12 @@
           <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <div class="contacts__map">
-          <img src="img/map.jpg" width="320" height="362"
-            alt="Карта, на которой отмечено место нахождения компании Кэт энерджи.">
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?feedback=map%2Fedit&feedback-context=map.controls&ll=30.323486%2C59.939334&z=16"
+        width="320" height="362" allowfullscreen title="Карта, на которой отмечено место нахождения компании Кэт энерджи.">
+      </iframe>
+        <!-- <img src="img/map.jpg" width="320" height="362"
+            alt="Карта, на которой отмечено место нахождения компании Кэт энерджи."> -->
         </div>
       </section>
     </main>
@@ -193,5 +201,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

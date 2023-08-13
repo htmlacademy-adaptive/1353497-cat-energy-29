@@ -1,23 +1,33 @@
 .selection-form {
   margin-bottom: 46px;
-}
 
-.selection-form__item {
-  display: flex;
-}
+  &__item {
+    display: flex;
+    margin-bottom: 24px;
+  }
 
-.selection-form__label {
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #444444;
-}
+  &__field {
+    color: #444444;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    flex: 1;
+    border: 1px solid #e7e7e7;
+    padding-bottom: 13px;
+    padding-top: 14px;
+    padding-left: 15px;
+    padding-right: 10px;
+  }
 
-.selection-form__field {
-  color: #444444;
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
+  &__label {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #444444;
+    margin-right: 13px;
+    padding: 14px 0;
+    padding-bottom: 13px;
+  }
 }
