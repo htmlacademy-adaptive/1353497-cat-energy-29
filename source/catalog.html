@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -41,14 +42,14 @@
     </header>
     <main class="main-container">
       <div class="catalog-page">
-        <h2 class="catalog-page__title">Каталог продукции</h2>
+        <h1 class="catalog-page__title">Каталог продукции</h1>
         <ul class="products">
           <li class="products__card">
             <a class="products__link" href="#">
               <img class="product__img" src="" width="68" height="86" alt="Баночка c питанием для котов">
             </a>
-            <a class="product__title" href="#">
-              <h3 class="product__title">Cat Energy PRO 500 г</h3>
+            <a class="product__link" href="#">
+              <p class="product__title">Cat Energy PRO 500 г</p>
             </a>
             <dl class="products__list">
               <div class="products__item">
@@ -76,14 +77,14 @@
                 </dd>
               </div>
             </dl>
-            <a class="button" href="#">заказать</a>
+            <a class="button button-products" href="#">заказать</a>
           </li>
           <li class="products__card">
             <a class="products__link" href="#">
               <img class="product__img" src="" width="68" height="86" alt="Баночка c питанием для котов">
             </a>
-            <a class="product__title" href="#">
-              <h3 class="product__title">Cat Energy PRO 1000 г</h3>
+            <a class="product__link" href="#">
+              <p class="product__title">Cat Energy PRO 1000 г</p>
             </a>
             <dl class="products__list">
               <div class="products__item">
@@ -111,14 +112,14 @@
                 </dd>
               </div>
             </dl>
-            <a class="button" href="#">заказать</a>
+            <a class="button button-products" href="#">заказать</a>
           </li>
           <li class="products__card">
             <a class="products__link" href="#">
               <img class="product__img" src="" width="68" height="86" alt="Баночка c питанием для котов">
             </a>
-            <a class="product__title" href="#">
-              <h3 class="product__title">Cat Energy PRO 500 г</h3>
+            <a class="product__link" href="#">
+              <p class="product__title">Cat Energy PRO 500 г</p>
             </a>
             <dl class="products__list">
               <div class="products__item">
@@ -146,14 +147,14 @@
                 </dd>
               </div>
             </dl>
-            <a class="button" href="#">заказать</a>
+            <a class="button button-products" href="#">заказать</a>
           </li>
           <li class="products__card">
             <a class="products__link" href="#">
               <img class="product__img" src="" width="68" height="86" alt="Баночка c питанием для котов">
             </a>
-            <a class="product__title" href="#">
-              <h3 class="product__title">Cat Energy PRO 1000 г</h3>
+            <a class="product__link" href="#">
+              <p class="product__title">Cat Energy PRO 1000 г</p>
             </a>
             <dl class="products__list">
               <div class="products__item">
@@ -181,14 +182,14 @@
                 </dd>
               </div>
             </dl>
-            <a class="button" href="#">заказать</a>
+            <a class="button button-products" href="#">заказать</a>
           </li>
           <li class="products__card">
             <a class="products__link" href="#">
               <img class="product__img" src="" width="68" height="86" alt="Баночка c питанием для котов">
             </a>
-            <a class="product__title" href="#">
-              <h3 class="product__title">Cat Energy slim 500 г</h3>
+            <a class="product__link" href="#">
+              <p class="product__title">Cat Energy slim 500 г</p>
             </a>
             <dl class="products__list">
               <div class="products__item">
@@ -216,14 +217,14 @@
                 </dd>
               </div>
             </dl>
-            <a class="button" href="#">заказать</a>
+            <a class="button button-products" href="#">заказать</a>
           </li>
           <li class="products__card">
             <a class="products__link" href="#">
               <img class="product__img" src="" width="68" height="86" alt="Баночка c питанием для котов">
             </a>
-            <a class="product__title" href="#">
-              <h3 class="product__title">Cat Energy slim 1000 г</h3>
+            <a class="product__link" href="#">
+              <p class="product__title">Cat Energy slim 1000 г</p>
             </a>
             <dl class="products__list">
               <div class="products__item">
@@ -251,14 +252,14 @@
                 </dd>
               </div>
             </dl>
-            <a class="button" href="#">заказать</a>
+            <a class="button button-products" href="#">заказать</a>
           </li>
           <li class="products__card">
             <a class="products__link" href="#">
               <img class="product__img" src="" width="68" height="86" alt="Баночка c питанием для котов">
             </a>
-            <a class="product__title" href="#">
-              <h3 class="product__title">Cat Energy slim 500 г</h3>
+            <a class="product__link" href="#">
+              <p class="product__title">Cat Energy slim 500 г</p>
             </a>
             <dl class="products__list">
               <div class="products__item">
@@ -286,63 +287,63 @@
                 </dd>
               </div>
             </dl>
-            <a class="button" href="#">заказать</a>
+            <a class="button button-products" href="#">заказать</a>
           </li>
           <li class="products__card">
-            <h3 class="product__title">Показать еще 100500 товаров</h3>
-            <p class="stats__legend">
+            <p class="product__show-more">Показать еще 100500 товаров</p>
+            <span class="products__options">
               На самом деле вкусов гораздо больше!
-            </p>
+            </span>
             <a class="button" href="#">показать все</a>
           </li>
         </ul>
       </div>
-      <section class="products">
-        <h2>Дополнительные товары</h2>
-        <ul class="products__list">
-          <li class="products__card">
-            <h3 class="product__title">Сахарозаменитель</h3>
-            <div class="products__item">
-              <dt class="products__options">
+      <section class="selection-products">
+        <h2 class="selection-products__title">Дополнительные товары</h2>
+        <ul class="selection-products__list">
+          <li class="selection-products__item">
+            <p>Сахарозаменитель</p>
+            <div class="selection-products__wrapper">
+              <dt class="selection-products__options">
                 1 упаковка (100 г)
               </dt>
-              <dd class="products__description">
+              <dd class="selection-products__description">
                 200 ₽
               </dd>
             </div>
             <a class="button" href="#">заказать</a>
           </li>
-          <li class="products__card">
-            <h3 class="product__title">питьевая вода</h3>
-            <div class="products__item">
-              <dt class="products__options">
+          <li class="selection-products__item">
+            <p>питьевая вода</p>
+            <div class="selection-products__wrapper">
+              <dt class="selection-products__options">
                 5 литров
               </dt>
-              <dd class="products__description">
+              <dd class="selection-products__description">
                 50 ₽
               </dd>
             </div>
             <a class="button" href="#">заказать</a>
           </li>
-          <li class="products__card">
-            <h3 class="product__title">молоко</h3>
-            <div class="products__item">
-              <dt class="products__options">
+          <li class="selection-products__item">
+            <p>молоко</p>
+            <div class="selection-products__wrapper">
+              <dt class="selection-products__options">
                 1 литр
               </dt>
-              <dd class="products__description">
+              <dd class="selection-products__description">
                 100 ₽
               </dd>
             </div>
             <a class="button" href="#">заказать</a>
           </li>
-          <li class="products__card">
-            <h3 class="product__title">витамины</h3>
-            <div class="products__item">
-              <dt class="products__options">
+          <li class="selection-products__item">
+            <p>витамины</p>
+            <div class="selection-products__wrapper">
+              <dt class="selection-products__options">
                 1 упаковка (30 г)
               </dt>
-              <dd class="products__description">
+              <dd class="selection-products__description">
                 300 ₽
               </dd>
             </div>
@@ -351,27 +352,27 @@
         </ul>
         <div class="present">
           <span class="present__icon"></span>
-          <span class="visually-hidden">Картинка c подарочной коробкой</span>
-          <p class="present__description">
+          <!-- <span class="visually-hidden">Картинка c подарочной коробкой</span> -->
+          <span class="present__description">
             Закажите все и получите чехол для кота в подарок!
-          </p>
+          </span>
         </div>
       </section>
       <section class="contacts">
-        <div class="news__wrapper">
-          <h2 class="news__title">приглашаем к сотрудничеству дилеров!</h2>
-          <p class="adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="contacts__wrapper">
+          <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <div class="contacts__map">
+          <img src="img/map.jpg" width="320" height="362"
+            alt="Карта, на которой отмечено место нахождения компании Кэт энерджи.">
         </div>
       </section>
-      <div class="map">
-        <img class="slider__item" src="img/map.jpg" width="320" height="362"
-          alt="Карта, на которой отмечено место нахождения компании Кэт энерджи.">
-      </div>
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__logo">
-          <a class="main-footer__logo-text">
+          <a class="main-footer__logo-link">
             <img class="main-footer__logo-text" src="img/logotype-text.svg" width="128" height="24"
             alt="Название сайта Кэт энерджи.">
           </a>
@@ -380,27 +381,33 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Переход на социальную сеть вконтакте.</span>
+                <div class="social__icon social__icon--vkontakte"></div>
+                <!-- <span class="visually-hidden">Переход на социальную сеть вконтакте.</span> -->
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Переход на видеохостинг ютуб.</span>
+                <div class="social__icon social__icon--youtube"></div>
+                <!-- <span class="visually-hidden">Переход на видеохостинг ютуб.</span> -->
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Переход в мессенджер телеграмм.</span>
+                <div class="social__icon social__icon--telegram"></div>
+                <!-- <span class="visually-hidden">Переход в мессенджер телеграмм.</span> -->
               </a>
             </li>
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">Переход на сайт html-academy.</span>
-          </a>
+          <p class="copyright__title">HTML Academy
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <!-- <span class="visually-hidden">Переход на сайт html-academy.</span> -->
+            </a>
+          </p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">Переход на сайт html-academy.</span>
+            <div class="copyright__icon"></div>
+            <!-- <span class="visually-hidden">Переход на сайт html-academy.</span> -->
           </a>
         </div>
       </div>

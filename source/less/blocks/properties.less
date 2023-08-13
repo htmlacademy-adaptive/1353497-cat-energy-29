@@ -1,0 +1,66 @@
+.properties__icon--leaf {
+  background-image: url("../img/icon_leaf.svg");
+  width: 60px;
+  height: 60px;
+}
+
+.properties__icon--water {
+  background-image: url("../img/icon_water.svg");
+  width: 60px;
+  height: 60px;
+}
+
+.properties__icon--cutlery {
+  background-image: url("../img/icon_cutlery.svg");
+  width: 60px;
+  height: 60px;
+}
+
+.properties__icon--scales {
+  background-image: url("../img/icon_scales.svg");
+  width: 60px;
+  height: 60px;
+}
+
+.properties {
+  margin-bottom: 49px;
+}
+
+.properties h2 {
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 42px;
+}
+
+.properties p {
+  color: #444444;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.properties__description {
+  width: 200px;
+}
+
+.properties__item {
+  display: flex;
+  gap: 20px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.properties__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 246px 246px;
+    // gap: 37px;
+    // width: 708px;
+  }
+}
