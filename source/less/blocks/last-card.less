@@ -1,0 +1,46 @@
+.last-card {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  &__wrapper {
+    position: relative;
+    width: 219px;
+    padding: 0 30px;
+    margin-bottom: 21px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background-color: #d3d3d3;
+      top: 12px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+
+  &__show-more {
+    color: #111111;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__options {
+    color: #444444;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

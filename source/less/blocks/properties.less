@@ -1,7 +1,31 @@
+.properties {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 49px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
 .properties__icon--leaf {
   background-image: url("../img/icon_leaf.svg");
   width: 60px;
   height: 60px;
+
+  &__block-title {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    line-height: 26px;
+  }
 }
 
 .properties__icon--water {
@@ -20,10 +44,6 @@
   background-image: url("../img/icon_scales.svg");
   width: 60px;
   height: 60px;
-}
-
-.properties {
-  margin-bottom: 49px;
 }
 
 .properties h2 {
@@ -59,8 +79,13 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 246px 246px;
-    // gap: 37px;
-    // width: 708px;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 280px;
+    gap: 80px;
   }
 }
