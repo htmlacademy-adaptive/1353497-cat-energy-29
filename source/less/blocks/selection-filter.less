@@ -1,15 +1,20 @@
 .selection-filter {
-  padding-bottom: 26px;
+  margin-bottom: 26px;
 
-  &::before,
-  &::after {
-    content: "";
-    display: block;
-    width: 320px;
-    height: 1px;
-    background-color: #d9d9d9;
-    margin-left: -20px;
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    margin: 0 auto;
   }
+
+  // &::before,
+  // &::after {
+  //   content: "";
+  //   display: block;
+  //   width: 320px;
+  //   height: 1px;
+  //   background-color: #d9d9d9;
+  //   margin-left: -20px;
+  // }
 
   &__list {
     list-style: none;

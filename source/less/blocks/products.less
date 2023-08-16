@@ -4,6 +4,20 @@
   padding: 0;
   display: grid;
 
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 324px);
+    gap: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 245px);
+    gap: 80px;
+  }
+
   &__item {
     display: flex;
     justify-content: space-between;
@@ -16,6 +30,10 @@
     display: grid;
     grid-template-columns: repeat(2, 140px);
     grid-template-rows: 56px 56px 40px;
+
+    @media (min-width: @desktop-width) {
+      grid-template-columns: repeat(2, 122px);
+    }
 
     &::before {
       position: absolute;

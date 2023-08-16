@@ -6,6 +6,10 @@
     min-width: 320px;
     height: 1px;
     background-color: #e6e6e6;
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -27,6 +31,13 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .site-list__item--active::after {
+    background-color: #ffffff;
+  }
+}
+
+
 .site-list a {
   display: block;
   padding: 22px 20px;
@@ -42,5 +53,9 @@
     line-height: 24px;
     padding: 19px 5px;
     padding-bottom: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
   }
 }
