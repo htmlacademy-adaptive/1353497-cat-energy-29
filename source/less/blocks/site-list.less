@@ -7,6 +7,10 @@
     height: 1px;
     background-color: #e6e6e6;
 
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
     @media (min-width: @desktop-width) {
       display: none;
     }
@@ -51,8 +55,8 @@
   @media (min-width: @tablet-width) {
     font-size: 18px;
     line-height: 24px;
-    padding: 19px 5px;
-    padding-bottom: 15px;
+    padding: 0;
+    padding-bottom: 12px;
   }
 
   @media (min-width: @desktop-width) {
