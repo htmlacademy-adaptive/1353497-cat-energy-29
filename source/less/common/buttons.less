@@ -45,6 +45,8 @@
   }
 
   &__application {
+    width: 280px;
+    margin: 0 auto;
     background-color: @buttom-program-color;
     text-transform: uppercase;
     font-family: inherit;
@@ -53,6 +55,15 @@
     color: #ffffff;
     padding: 8px 44px;
     margin-bottom: 21px;
+
+    @media (min-width: @tablet-width) {
+      width: 284px;
+      margin: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 570px;
+    }
   }
 
   &__products {

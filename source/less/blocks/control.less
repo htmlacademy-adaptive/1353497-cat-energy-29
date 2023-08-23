@@ -1,5 +1,56 @@
-.control__label {
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #444444;
+.control {
+  position: relative;
+
+  &__label {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #444444;
+    padding-left: 45px;
+
+    @media (min-width: @desktop-width) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  &__mark-filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+  }
+
+  &__input[type="radio"]:checked + &__mark-filter::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    transform: translate(50%, 50%);
+    width: 15px;
+    height: 15px;
+    background-color: #68b738;
+    border-radius: 50%;
+  }
+
+  &__mark-product {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #cdcdcd;
+  }
+
+  &__input[type="checkbox"]:checked + &__mark-product::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 26px;
+    height: 26px;
+    background: url("..//..//img/product_tick.svg");
+  }
 }

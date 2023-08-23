@@ -23,18 +23,18 @@
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
-                <a href="index.html">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">
                   главная
                 </a>
               </li>
               <li class="site-list__item">
-                <a href="catalog.html">
+                <a class="site-list__link" href="catalog.html">
                   каталог продукции
                 </a>
               </li>
-              <li class="site-list__item">
-                <a href="form.html">
+              <li class="site-list__item--active">
+                <a class="site-list__link" href="form.html">
                   подбор программы
                 </a>
               </li>
@@ -43,122 +43,128 @@
         </nav>
     </header>
     <main>
-      <section class="selection">
-        <h1 class="selection__main-title">Подбор программы</h1>
-        <p>заполните анкету, и мы подберем<br>
-          программу питания для вашего кота</p>
-        <div class="selection-form">
-          <label class="selection-form__item">
-            <legend class="selection-form__label">имя:*</legend>
-            <input class="selection-form__field" name="name" placeholder="барсик">
-          </label>
-          <label class="selection-form__item">
-            <legend class="selection-form__label">вес (кг):*</legend>
-            <input class="selection-form__field" name="weight" placeholder="7">
-          </label>
-          <label class="selection-form__item">
-            <legend class="selection-form__label">возраст (лет):</legend>
-            <input class="selection-form__field" name="age" placeholder="7">
-          </label>
-        </div>
-        <div class="selection-filter">
-          <ul class="selection-filter__list">
-            <li class="selection-filter__item">
-              <label class="control">
-                <input class="visually-hidden control__input" type="radio" name="control-group" value="decrease" checked="">
-                <span class="control__mark"></span>
-                <span class="control__label">похудение</span>
+        <section class="selection">
+            <h1 class="selection__main-title">Подбор программы</h1>
+            <p class="selection__form-item">заполните анкету, и мы подберем<br>
+              программу питания для вашего кота</p>
+          <div class="selection__wrapper">
+            <div class="selection-form">
+              <label class="selection-form__item">
+                <legend class="selection-form__label">имя:*</legend>
+                <input class="selection-form__field" name="name" placeholder="барсик">
               </label>
-            </li>
-            <li class="selection-filter__item">
-              <label class="control">
-                <input class="visually-hidden control__input" type="radio" name="control-group" value="increase">
-                <span class="control__mark"></span>
-                <span class="control__label">набор массы</span>
+              <label class="selection-form__item">
+                <legend class="selection-form__label">вес (кг):*</legend>
+                <input class="selection-form__field" name="weight" placeholder="7">
               </label>
-            </li>
-            <li class="selection-filter__item">
-              <label class="control">
-                <input class="visually-hidden control__input" type="radio" name="control-group" value="uncertainty">
-                <span class="control__mark"></span>
-                <span class="control__label">не знаю (нужен ваш совет)</span>
+              <label class="selection-form__item">
+                <legend class="selection-form__label">возраст (лет):</legend>
+                <input class="selection-form__field" name="age" placeholder="7">
               </label>
-            </li>
-          </ul>
-        </div>
-        <div class="selection-contacts">
-          <div class="selection-contacts__wrapper">
+            </div>
+            <div class="selection-filter">
+              <ul class="selection-filter__list">
+                <li class="selection-filter__item">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="radio" name="control-group" value="decrease" checked="">
+                    <span class="control__mark-filter"></span>
+                    <span class="control__label">похудение</span>
+                  </label>
+                </li>
+                <li class="selection-filter__item">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="radio" name="control-group" value="increase">
+                    <span class="control__mark-filter"></span>
+                    <span class="control__label">набор массы</span>
+                  </label>
+                </li>
+                <li class="selection-filter__item">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="radio" name="control-group" value="uncertainty">
+                    <span class="control__mark-filter"></span>
+                    <span class="control__label">не знаю (нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="selection-contacts">
             <h2 class="selection-contacts__block-title">Контактные данные
               (владельца кота)</h2>
+            <div class="selection-contacts__wrapper">
+              <label class="selection-contacts__item">
+                <legend class="selection-contacts__label">E-mail:*</legend>
+                <span class="selection-contacts__icon selection-contacts__icon--mail"></span>
+                <input class="selection-contacts__field" name="mail" placeholder="kuklachev@gmail.com">
+              </label>
+              <label class="selection-contacts__item">
+                <legend class="selection-contacts__label">Телефон:*</legend>
+                <span class="selection-contacts__icon selection-contacts__icon--phone"></span>
+                <input class="selection-contacts__field" name="phone" placeholder="8 (960) 900-60-90">
+              </label>
+            </div>
           </div>
-          <label class="selection-contacts__item">
-            <legend class="selection-contacts__label">E-mail:*</legend>
-            <input class="selection-contacts__field" name="mail" placeholder="kuklachev@gmail.com">
-          </label>
-          <label class="selection-contacts__item">
-            <legend class="selection-contacts__label">Телефон:*</legend>
-            <input class="selection-contacts__field" name="phone" placeholder="8 (960) 900-60-90">
-          </label>
-        </div>
-        <div class="selection-comment">
-          <h2>Комментарий</h2>
-          <label class="selection-comment__item">
-            <input class="selection-comment__field" name="comment" placeholder="расскажите обо всех повадках кота">
-          </label>
-        </div>
-        <fieldset class="selection-products">
-          <legend class="selection-products__title">Дополнительно:</legend>
-          <ul class="selection-products__list">
-            <li class="selection-products__item">
-              <label class="control">
-                  <input class="control__input visually-hidden" type="checkbox" name="sugar" checked="">
-                  <span class="control__mark"></span>
-                  <span class="control__label">сахарозаменитель</span>
+          <div class="selection-comment">
+            <h2 class="selection-comment__block-title">Комментарий</h2>
+            <div class="selection-comment__wrapper">
+              <label class="selection-comment__item">
+                <input class="selection-comment__field" name="comment" placeholder="расскажите обо всех повадках кота">
               </label>
-            </li>
-            <li class="selection-products__item">
-              <label class="control">
-                <input class="control__input visually-hidden" type="checkbox" name="water">
-                <span class="control__mark"></span>
-                <span class="control__label">питьевая вода</span>
-              </label>
-            </li>
-            <li class="selection-products__item">
-              <label class="control">
-                <input class="control__input visually-hidden" type="checkbox" name="milk">
-                <span class="control__mark"></span>
-                <span class="control__label">молоко</span>
-              </label>
-            <li class="selection-products__item">
-              <label class="control">
-                <input class="control__input visually-hidden" type="checkbox" name="vitamins">
-                <span class="control__mark"></span>
-                <span class="control__label">витамины</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <div class="application-wrapper">
-          <button class="button button__application" type="submit">отправить заявку</button>
-          <span class="stats-legend">
-            * — Обязательные поля
-          </span>
-        </div>
-      </section>
-      <section class="contacts">
-        <div class="contacts__wrapper">
-          <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        </div>
-        <div class="contacts__map">
-      <iframe
-        src="https://yandex.ru/map-widget/v1/?feedback=map%2Fedit&feedback-context=map.controls&ll=30.323486%2C59.939334&z=16"
-        width="320" height="362" allowfullscreen title="Карта, на которой отмечено место нахождения компании Кэт энерджи.">
-      </iframe>
-        <!-- <img src="img/map.jpg" width="320" height="362"
-            alt="Карта, на которой отмечено место нахождения компании Кэт энерджи."> -->
-        </div>
-      </section>
+            </div>
+          </div>
+          <fieldset class="selection-products">
+            <legend class="selection-products__title">Дополнительно:</legend>
+            <ul class="selection-products__list">
+              <li class="selection-products__item">
+                <label class="control">
+                    <input class="control__input visually-hidden" type="checkbox" name="sugar" checked="">
+                    <span class="control__mark-product"></span>
+                    <span class="control__label">сахарозаменитель</span>
+                </label>
+              </li>
+              <li class="selection-products__item">
+                <label class="control">
+                  <input class="control__input visually-hidden" type="checkbox" name="water">
+                  <span class="control__mark-product"></span>
+                  <span class="control__label">питьевая вода</span>
+                </label>
+              </li>
+              <li class="selection-products__item">
+                <label class="control">
+                  <input class="control__input visually-hidden" type="checkbox" name="milk">
+                  <span class="control__mark-product"></span>
+                  <span class="control__label">молоко</span>
+                </label>
+              <li class="selection-products__item">
+                <label class="control">
+                  <input class="control__input visually-hidden" type="checkbox" name="vitamins">
+                  <span class="control__mark-product"></span>
+                  <span class="control__label">витамины</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="application-wrapper">
+            <button class="button button__application" type="submit">отправить заявку</button>
+            <span class="stats-legend">
+              * — Обязательные поля
+            </span>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="contacts__wrapper">
+            <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
+            <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </div>
+          <div class="contacts__map">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?feedback=map%2Fedit&feedback-context=map.controls&ll=30.323486%2C59.939334&z=16"
+            width="320" height="362" allowfullscreen title="Карта, на которой отмечено место нахождения компании Кэт энерджи.">
+          </iframe>
+            <!-- <img src="img/map.jpg" width="320" height="362"
+                alt="Карта, на которой отмечено место нахождения компании Кэт энерджи."> -->
+          </div>
+        </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">

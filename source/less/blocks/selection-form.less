@@ -1,9 +1,23 @@
 .selection-form {
-  margin-bottom: 46px;
+  padding: 0 20px;
+  margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex: 1;
+  }
 
   &__item {
     display: flex;
     margin-bottom: 24px;
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 20px;
+    }
   }
 
   &__field {
@@ -16,10 +30,13 @@
     text-transform: uppercase;
     flex: 1;
     border: 1px solid #e7e7e7;
-    padding-bottom: 13px;
-    padding-top: 14px;
-    padding-left: 15px;
-    padding-right: 10px;
+    padding: 14px 10px 13px 15px;
+
+    @media (min-width: @desktop-width) {
+      font-size: 20px;
+      line-height: 20px;
+      padding: 11px 20px;
+    }
   }
 
   &__label {
@@ -29,5 +46,10 @@
     margin-right: 13px;
     padding: 14px 0;
     padding-bottom: 13px;
+
+    @media (min-width: @desktop-width) {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 }
