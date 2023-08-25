@@ -33,7 +33,7 @@
                   каталог продукции
                 </a>
               </li>
-              <li class="site-list__item--active">
+              <li class="site-list__item site-list__item--active">
                 <a class="site-list__link" href="form.html">
                   подбор программы
                 </a>
@@ -112,30 +112,30 @@
               </label>
             </div>
           </div>
-          <fieldset class="selection-products">
-            <legend class="selection-products__title">Дополнительно:</legend>
-            <ul class="selection-products__list">
-              <li class="selection-products__item">
+          <fieldset class="additional">
+            <legend class="additional__title">Дополнительно:</legend>
+            <ul class="additional__list">
+              <li class="additional__item">
                 <label class="control">
                     <input class="control__input visually-hidden" type="checkbox" name="sugar" checked="">
                     <span class="control__mark-product"></span>
                     <span class="control__label">сахарозаменитель</span>
                 </label>
               </li>
-              <li class="selection-products__item">
+              <li class="additional__item">
                 <label class="control">
                   <input class="control__input visually-hidden" type="checkbox" name="water">
                   <span class="control__mark-product"></span>
                   <span class="control__label">питьевая вода</span>
                 </label>
               </li>
-              <li class="selection-products__item">
+              <li class="additional__item">
                 <label class="control">
                   <input class="control__input visually-hidden" type="checkbox" name="milk">
                   <span class="control__mark-product"></span>
                   <span class="control__label">молоко</span>
                 </label>
-              <li class="selection-products__item">
+              <li class="additional__item">
                 <label class="control">
                   <input class="control__input visually-hidden" type="checkbox" name="vitamins">
                   <span class="control__mark-product"></span>
@@ -152,9 +152,12 @@
           </div>
         </section>
         <section class="contacts">
-          <div class="contacts__wrapper">
+          <div class="contacts__wrapper contacts__wrapper--background">
             <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
-            <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <div class="contacts__wrapper-adress">
+              <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="contacts__adress">Санкт-Петербург</p>
+            </div>
           </div>
           <div class="contacts__map">
           <iframe

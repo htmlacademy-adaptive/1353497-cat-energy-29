@@ -1,4 +1,8 @@
 .site-list {
+  @media (min-width: @tablet-width) {
+    min-width: 436px;
+  }
+
   &__item::before {
     position: absolute;
     content: "";
@@ -16,20 +20,34 @@
     }
   }
 
-  @media (min-width: @tablet-width) {
-    min-width: 436px;
+  &__item--active {
+    position: relative;
 
-    &__item--active {
-      position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      min-width: 64px;
+      height: 2px;
+      right: 0;
+      left: 0;
+      background-color: #68b738;
+    }
+  }
 
-      &::after {
-        position: absolute;
-        content: "";
-        min-width: 64px;
-        height: 2px;
-        right: 0;
-        left: 0;
-        background-color: #68b738;
+  &__item--active-main {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      min-width: 64px;
+      height: 2px;
+      right: 0;
+      left: 0;
+      background-color: #68b738;
+
+      @media (min-width: @desktop-width) {
+        background-color: #ffffff;
       }
     }
   }
@@ -61,11 +79,5 @@
     @media (min-width: @desktop-width) {
       color: #ffffff;
     }
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .site-list__item--active::after {
-    background-color: #ffffff;
   }
 }

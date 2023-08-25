@@ -5,7 +5,9 @@
 
   @media (min-width: @tablet-width) {
     width: 708px;
+    padding: 0;
     margin: 0 auto;
+    margin-bottom: 70px;
   }
 
   @media (min-width: @desktop-width) {
@@ -21,6 +23,10 @@
     background-color: #d9d9d9;
     margin-bottom: 27px;
     margin-left: -20px;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 
   &__main-title {
@@ -29,5 +35,16 @@
     margin-bottom: 41px;
     font-size: 36px;
     line-height: 36px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 84px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 0;
+      padding: 75px 0 80px;
+    }
   }
 }
