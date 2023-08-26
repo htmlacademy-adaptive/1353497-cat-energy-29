@@ -2,11 +2,16 @@
   width: 280px;
   margin: 0 auto;
   text-align: center;
-  background-image: linear-gradient(#68b738d9 100%, #ffffff 60%), url("../../img/cat-background.png");
+  background-image: linear-gradient(#68b738d9 100%, #ffffff 60%), url("../../img/cat-background-mobile.png");
   background-repeat: no-repeat;
   background-size: auto 320px;
   margin-bottom: 20px;
   padding: 0 20px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(#68b738d9 100%, #ffffff 60%), url("../../img/cat-background-mobile@2x.png");
+    background-size: auto 320px;
+  }
 
   @media (min-width: @tablet-width) {
     position: relative;
@@ -28,11 +33,18 @@
   }
 
   &__logo-hero {
+    @media (min-width: @tablet-width) {
+      width: 709px;
+      height: auto;
+    }
+
     @media (min-width: @desktop-width) {
       position: absolute;
       content: "";
       top: 50px;
-      left: 50%;
+      left: 555px;
+      width: 552px;
+      height: auto;
     }
   }
 

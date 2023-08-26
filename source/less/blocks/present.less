@@ -1,5 +1,5 @@
 .present {
-  background-image: linear-gradient(#68b738d9 100%, #ffffff 60%), url("../../img/cat_case.png");
+  background-image: linear-gradient(#68b738d9 100%, #ffffff 60%), url("../../img/cat-case-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 280px;
@@ -12,16 +12,26 @@
   gap: 50px;
   justify-content: flex-end;
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(#68b738d9 100%, #ffffff 60%), url("../../img/cat-case-mobile@2x.png");
+    background-size: 280px;
+  }
+
   @media (min-width: @tablet-width) {
     flex-direction: row;
     padding: 0 73px;
     box-sizing: border-box;
     width: 707px;
     height: 200px;
-    background-image: linear-gradient(#68b738d9 100%, #ffffff 60%), url("../../img/cat_case_wide.png");
+    background-image: linear-gradient(#68b738d9 100%, #ffffff 60%), url("../../img/cat-case-tablet.png");
     justify-content: flex-start;
     gap: 264px;
     margin-bottom: 75px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(#68b738d9 100%, #ffffff 60%), url("../../img/cat-case-tablet@2x.png");
+      background-size: 707px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -30,7 +40,12 @@
     height: 288px;
     padding: 53px 73px 0;
     gap: 46px;
-    background-image: linear-gradient(#68b738d9 100%, #ffffff 60%), url("../../img/cat_case_small.png");
+    background-image: linear-gradient(#68b738d9 100%, #ffffff 60%), url("../../img/cat-case-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(#68b738d9 100%, #ffffff 60%), url("../../img/cat-case-desktop@2x.png");
+      background-size: 245px;
+    }
   }
 
   &__description {

@@ -4,17 +4,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__wrapper">
-        <a class="main-header__logo-link">
-          <img class="main-header__logo-image" src="img/logotype-mobile.svg" width="33" height="38"
-          alt="Логотип сайта Кэт энерджи.">
+        <a class="main-header__logo-link main-header__logo-cat">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+            <img class="main-header__logo-image" src="img/logotype-mobile.svg" width="33" height="38" alt="Логотип сайта Кэт энерджи.">
+          </picture>
         </a>
-        <a class="main-header__logo-link">
-          <img class="main-header__logo-text" src="img/logotype-text.svg" width="101" height="18"
-          alt="Название сайта Кэт энерджи.">
+        <a class="main-header__logo-link main-header__logo-text">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logotype-text-desktop.svg">
+            <img class="main-header__logo-text" src="img/logotype-text.svg" width="101" height="18"alt="Название сайта Кэт энерджи.">
+          </picture>
         </a>
       </div>
         <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -48,7 +57,11 @@
         <ul class="products">
           <li class="products__card">
             <a class="products__link products__link--img" href="#">
-              <img class="products__img" src="img/catalog_pro_chicken_500.png" width="140" height="107" alt="Баночка c питанием для котов">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/pro-chicken-desktop-500.png 1x, img/pro-chicken-desktop-500@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/pro-chicken-tablet-500.png 1x, img/pro-chicken-tablet-500@2x.png 2x">
+                <img class="products__img" src="img/pro-chicken-mobile-500.png" srcset="img/pro-chicken-mobile-500@2x.png 2x" width="140" height="107" alt="Баночка c питанием для котов">
+              </picture>
             </a>
             <a class="products__link products__link--title" href="#">
               <p class="products__title">Cat Energy PRO 500 г</p>
@@ -83,7 +96,11 @@
           </li>
           <li class="products__card">
             <a class="products__link products__link--img" href="#">
-              <img class="products__img" src="img/catalog_pro_chicken_1000.png" width="140" height="107" alt="Баночка c питанием для котов">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/pro-chicken-desktop-1000.png 1x, img/pro-chicken-desktop-1000@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/pro-chicken-tablet-1000.png 1x, img/pro-chicken-tablet-1000@2x.png 2x">
+                <img class="products__img" src="img/pro-chicken-mobile-1000.png" srcset="img/pro-chicken-mobile-1000@2x.png 2x" width="140" height="107" alt="Баночка c питанием для котов">
+              </picture>
             </a>
             <a class="products__link products__link--title" href="#">
               <p class="products__title">Cat Energy PRO 1000 г</p>
@@ -118,7 +135,11 @@
           </li>
           <li class="products__card">
             <a class="products__link products__link--img" href="#">
-              <img class="products__img" src="img/catalog_pro_fish_500.png" width="140" height="107" alt="Баночка c питанием для котов">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/pro-fish-desktop-500.png 1x, img/pro-fish-desktop-500@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/pro-fish-tablet-500.png 1x, img/pro-fish-tablet-500@2x.png 2x">
+                <img class="products__img" src="img/pro-fish-mobile-500.png" srcset="img/pro-fish-mobile-500@2x.png 2x" width="140" height="107" alt="Баночка c питанием для котов">
+              </picture>
             </a>
             <a class="products__link products__link--title" href="#">
               <p class="products__title">Cat Energy PRO 500 г</p>
@@ -153,7 +174,11 @@
           </li>
           <li class="products__card">
             <a class="products__link products__link--img" href="#">
-              <img class="products__img" src="img/catalog_pro_fish_1000.png" width="140" height="107" alt="Баночка c питанием для котов">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/pro-fish-desktop-1000.png 1x, img/pro-fish-desktop-1000@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/pro-fish-tablet-1000.png 1x, img/pro-fish-tablet-1000@2x.png 2x">
+                <img class="products__img" src="img/pro-fish-mobile-1000.png" srcset="img/pro-fish-mobile-1000@2x.png 2x" width="140" height="107" alt="Баночка c питанием для котов">
+              </picture>
             </a>
             <a class="products__link products__link--title" href="#">
               <p class="products__title">Cat Energy PRO 1000 г</p>
@@ -172,7 +197,7 @@
                   Вкус
                 </dt>
                 <dd class="products__description">
-                  Курица
+                  Рыба
                 </dd>
               </div>
               <div class="products__item">
@@ -188,7 +213,11 @@
           </li>
           <li class="products__card">
             <a class="products__link products__link--img" href="#">
-              <img class="products__img" src="img/catalog_slim_buckwheat_500.png" width="140" height="107" alt="Баночка c питанием для котов">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/slim-buckwheat-desktop-500.png 1x, img/slim-buckwheat-desktop-500@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/slim-buckwheat-tablet-500.png 1x, img/slim-buckwheat-tablet-500@2x.png 2x">
+                <img class="products__img" src="img/slim-buckwheat-mobile-500.png" srcset="img/slim-buckwheat-mobile-500@2x.png 2x" width="140" height="107" alt="Баночка c питанием для котов">
+              </picture>
             </a>
             <a class="products__link products__link--title" href="#">
               <p class="products__title">Cat Energy slim 500 г</p>
@@ -223,7 +252,11 @@
           </li>
           <li class="products__card">
             <a class="products__link products__link--img" href="#">
-              <img class="products__img" src="img/catalog_slim_buckwheat_1000.png" width="140" height="107" alt="Баночка c питанием для котов">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/slim-buckwheat-desktop-1000.png 1x, img/slim-buckwheat-desktop-1000@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/slim-buckwheat-tablet-1000.png 1x, img/slim-buckwheat-tablet-1000@2x.png 2x">
+                <img class="products__img" src="img/slim-buckwheat-mobile-1000.png" srcset="img/slim-buckwheat-mobile-1000@2x.png 2x" width="140" height="107" alt="Баночка c питанием для котов">
+              </picture>
             </a>
             <a class="products__link products__link--title" href="#">
               <p class="products__title">Cat Energy slim 1000 г</p>
@@ -258,7 +291,11 @@
           </li>
           <li class="products__card">
             <a class="products__link products__link--img" href="#">
-              <img class="products__img" src="img/catalog_slim_rice_500.png" width="140" height="107" alt="Баночка c питанием для котов">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/slim-rice-desktop-500.png 1x, img/slim-rice-desktop-500@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/slim-rice-tablet-500.png 1x, img/slim-rice-tablet-500@2x.png 2x">
+                <img class="products__img" src="img/slim-rice-mobile-500.png" srcset="img/slim-rice-mobile-500@2x.png 2x" width="140" height="107" alt="Баночка c питанием для котов">
+              </picture>
             </a>
             <a class="products__link products__link--title" href="#">
               <p class="products__title">Cat Energy slim 500 г</p>
