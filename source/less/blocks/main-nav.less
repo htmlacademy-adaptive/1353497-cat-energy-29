@@ -74,6 +74,25 @@
   }
 }
 
+.main-nav--opened .site-list {        //Переход с открытом меню в плашнетную и десктопную версии
+  @media (min-width: @tablet-width) {
+    display: flex;
+    gap: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
+  }
+}
+
+.main-nav--opened .site-list__item--active::after {
+  display: none;
+}
+
+.main-nav--opened .site-list__item--active-main::after {
+  display: none;
+}
+
 .main-nav--opened .main-nav__toggle {
   &::before,
   &::after {
@@ -94,4 +113,20 @@
   &::after {
     transform: rotate(-45deg);
   }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__list {
+  display: block;
+}
+
+.main-nav--nojs .site-list__item--active::after {
+  display: none;
+}
+
+.main-nav--nojs .site-list__item--active-main::after {
+  display: none;
 }
