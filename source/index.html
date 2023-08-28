@@ -4,17 +4,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body main-background">
     <header class="main-header">
       <div class="main-header__wrapper">
-        <a class="main-header__logo-link">
-          <img class="main-header__logo-image" src="img/logotype-mobile.svg" width="33" height="38"
-          alt="Логотип сайта Кэт энерджи.">
+        <a class="main-header__logo-link main-header__logo-cat">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+            <img class="main-header__logo-image" src="img/logotype-mobile.svg" width="33" height="38" alt="Логотип сайта Кэт энерджи.">
+          </picture>
         </a>
-        <a class="main-header__logo-link">
-          <img class="main-header__logo-text" src="img/logotype-text.svg" width="101" height="18"
-          alt="Название сайта Кэт энерджи.">
+        <a class="main-header__logo-link main-header__logo-text">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logotype-text-desktop.svg">
+            <img class="main-header__logo-text" src="img/logotype-text.svg" width="101" height="18"alt="Название сайта Кэт энерджи.">
+          </picture>
         </a>
       </div>
         <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -46,8 +55,11 @@
       <section class="main-hero">
         <h1 class="main-hero__main-title">Функциональное <br> питание для котов</h1>
         <p class="main-hero__slogan">Занялся собой? Займись котом!</p>
-        <img class="main-hero__logo-hero" src="img/cat-hero-mobile.png" width="280" height="270"
-        alt="Баночка для питания со вкусом курицы.">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/cat-hero-desktop.png 1x, img/cat-hero-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/cat-hero-tablet.png 1x, img/cat-hero-tablet@2x.png 2x">
+          <img class="main-hero__logo-hero" src="img/cat-hero-mobile.png" srcset="img/cat-hero-mobile@2x.png 2x" width="280" height="270" alt="Баночка для питания со вкусом курицы.">
+        </picture>
         <a class="button button__hero" href="form.html">подобрать программу</a>
       </section>
       <section class="program">
@@ -115,10 +127,16 @@
             </div>
           </div>
           <div class="example__slider">
-            <img src="img/cat-thin.png" width="280" height="256"
-            alt="Худой серый кот.">
-            <img src="img/cat-thick.png" width="280" height="256"
-            alt="Толстый серый кот.">
+            <picture>
+              <!-- <source media="(min-width: 1440px)" srcset="img/cat-thin-desktop.png 1x, img/cat-thin-desktop@2x.png 2x"> -->
+              <source media="(min-width: 768px)" srcset="imgcat-thin-tablet.png 1x, img/cat-thin-tablet@2x.png 2x">
+              <img class="example__cat-thin" src="img/cat-thin-mobile.png" srcset="img/cat-thin-mobile@2x.png" width="280" height="256" alt="Худой серый кот.">
+            </picture>
+            <picture>
+              <!-- <source media="(min-width: 1440px)" srcset="img/cat-thick-desktop.png 1x, img/cat-thick-desktop@2x.png 2x"> -->
+              <source media="(min-width: 768px)" srcset="img/cat-thick-tablet.png 1x, img/cat-thick-tablet@2x.png 2x">
+              <img class="example__cat-thick" src="img/cat-thick-mobile.png" srcset="img/cat-thick-mobile@2x.png" width="280" height="256" alt="Толстый серый кот.">
+            </picture>
               <button class="slider__toggle" type="button"></button>
               <button class="slider__toggle" type="button"></button>
           </div>
