@@ -145,11 +145,18 @@
     height: 20px;
 
     &--mail {
-      background: url("..//..//img/mail_field.svg");
+      mask-image: url("../img/sprite.svg#mail-field");
+      background-color: #222222;
     }
 
     &--phone {
-      background: url("..//..//img/phone_field.svg");
+      background: url("../img/sprite.svg#phone-field");
     }
+  }
+}
+
+.selection-contacts__icon--mail:hover {
+  &:hover {
+    background-color: #68b738;
   }
 }

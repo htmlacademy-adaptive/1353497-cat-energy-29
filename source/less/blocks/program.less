@@ -25,7 +25,7 @@
     float: left;
     width: 50px;
     height: 53px;
-    background: url("..//..//img/cat_sitting.svg") no-repeat;
+    background-image: url("../img/sprite.svg#cat_sitting");
     background-size: contain;
     margin-right: 20px;
 
@@ -50,9 +50,9 @@
     content: "";
     display: block;
     float: left;
+    background-image: url("../img/sprite.svg#cat_walk");
     width: 67px;
     height: 50px;
-    background: url("..//..//img/cat_walk.svg") no-repeat;
     background-size: contain;
     margin-right: 11px;
 
@@ -134,8 +134,12 @@
 
   &__icon {
     display: inline-block;
-    background-image: url("../../img/icon_arrow.svg");
+    background-image: url("../img/sprite.svg#icon-arrow");
     width: 32px;
     height: 10px;
+
+    &:hover {
+      background-image: url("../img/sprite.svg#icon-arrow-long");
+    }
   }
 }
