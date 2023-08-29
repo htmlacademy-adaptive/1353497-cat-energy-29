@@ -129,14 +129,16 @@
 
     @media (min-width: @desktop-width) {
       margin-bottom: 27px;
+      width: 490px;
     }
   }
 
   &__icon {
-    display: inline-block;
+    display: block;
     background-image: url("../img/sprite.svg#icon-arrow");
     width: 32px;
     height: 10px;
+    align-self: center;
 
     &:hover {
       background-image: url("../img/sprite.svg#icon-arrow-long");
