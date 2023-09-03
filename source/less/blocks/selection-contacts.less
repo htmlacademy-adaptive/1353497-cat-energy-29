@@ -24,6 +24,18 @@
     padding-left: 15px;
     padding-right: 10px;
 
+    &:hover {
+      border: 1px solid #cdcdcd;
+    }
+
+    &:focus {
+      border: 1px solid #444444;
+    }
+
+    &:focus .selection-contacts__icon {
+      background-color: #68b738;
+    }
+
     @media (min-width: @desktop-width) {
       font-size: 20px;
       line-height: 20px;
@@ -51,6 +63,7 @@
     font-size: 24px;
     line-height: 26px;
     margin-top: 20px;
+    font-weight: 400;
     margin-bottom: 35px;
 
     @media (min-width: @tablet-width) {
@@ -94,6 +107,12 @@
   &__item {
     position: relative;
     display: flex;
+
+    // Ошибка в поле при вводе данных
+
+    // &__item--error {
+    //   border: 1px solid #ff8282;
+    // }
 
     @media (min-width: @desktop-width) {
       flex: 1;
@@ -145,11 +164,19 @@
     height: 20px;
 
     &--mail {
-      background: url("..//..//img/mail_field.svg");
+      mask-image: url("../img/sprite.svg#mail-field");
+      background-color: #222222;
     }
 
     &--phone {
-      background: url("..//..//img/phone_field.svg");
+      mask-image: url("../img/sprite.svg#phone-field");
+      background-color: #222222;
     }
+  }
+}
+
+.selection-contacts__icon:hover {
+  &:hover {
+    background-color: #68b738;
   }
 }

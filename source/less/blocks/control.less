@@ -1,11 +1,18 @@
 .control {
   position: relative;
+  display: flex;
+  height: 30px;
 
   &__label {
     font-size: 16px;
     text-transform: uppercase;
     color: #444444;
     padding-left: 45px;
+    align-self: center;
+
+    &:active {
+      color: #2222224d;
+    }
 
     @media (min-width: @desktop-width) {
       font-size: 20px;
@@ -21,6 +28,14 @@
     height: 30px;
     border: 1px solid #cdcdcd;
     border-radius: 50%;
+
+    &:hover {
+      border: 1px solid #bababa;
+    }
+
+    &:active {
+      border: #bababa4d;
+    }
   }
 
   &__input[type="radio"]:checked + &__mark-filter::before {
@@ -52,5 +67,9 @@
     width: 26px;
     height: 26px;
     background: url("..//..//img/product_tick.svg");
+  }
+
+  &:active .control__input[type="radio"]:checked + &__mark-filter::before {
+    background-color: #68b7384d;
   }
 }
