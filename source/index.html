@@ -12,18 +12,20 @@
   <body class="page__body main-background">
     <header class="main-header">
       <div class="main-header__wrapper">
-        <a class="main-header__logo-link main-header__logo-cat">
+        <a class="main-header__logo-link main-header__logo-cat" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logotype-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
             <img class="main-header__logo-image" src="img/logotype-mobile.svg" width="33" height="38" alt="Логотип сайта Кэт энерджи.">
           </picture>
+          <span class="visually-hidden">Переход на главную страниу Cat Enegy.</span>
         </a>
-        <a class="main-header__logo-link main-header__logo-text">
+        <a class="main-header__logo-link main-header__logo-text" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logotype-text-desktop.svg">
             <img class="main-header__logo-text" src="img/logotype-text.svg" width="101" height="18"alt="Название сайта Кэт энерджи.">
           </picture>
+          <span class="visually-hidden">Переход на главную страниу Cat Enegy.</span>
         </a>
       </div>
         <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -64,23 +66,21 @@
       </section>
       <section class="program">
         <div class="program__item">
-          <div class="program__wrapper program__wrapper--slim">
-            <h3 class="program__title">похудение</h3>
-          </div>
+            <h3 class="program__title program__title--slim">похудение</h3>
           <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <div class="button-wrapper">
-            <a class="button button__program" href="catalog.html">каталог slim</a>
-            <span class="program__icon"></span>
+            <a class="button button-wrapper__link" href="catalog.html">каталог slim</a>
+            <span class="button-wrapper__icon"></span>
+            <span class="visually-hidden">Переход на страницу с каталогом.</span>
           </div>
         </div>
         <div  class="program__item">
-          <div class="program__wrapper program__wrapper--pro">
-            <h3 class="program__title">набор массы</h3>
-          </div>
+            <h3 class="program__title program__title--pro">набор массы</h3>
           <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <div class="button-wrapper">
-            <a class="button button__program" href="catalog.html">каталог pro</a>
-            <span class="program__icon"></span>
+            <a class="button button-wrapper__link" href="catalog.html">каталог pro</a>
+            <span class="button-wrapper__icon"></span>
+            <span class="visually-hidden">Переход на страницу с каталогом.</span>
           </div>
         </div>
       </section>
@@ -129,18 +129,24 @@
           <div class="example__slider">
             <div class="example__wrapper-thick">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/cat-thick-tablet.webp 1x, img/webp/cat-thick-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/webp/cat-thick-mobile.webp 1x, img/webp/cat-thick-mobile@2x.webp 2x">
+
                 <source media="(min-width: 768px)" srcset="img/cat-thick-tablet.png 1x, img/cat-thick-tablet@2x.png 2x">
                 <img class="example__cat-thick" src="img/cat-thick-mobile.png" srcset="img/cat-thick-mobile@2x.png" width="280" height="256" alt="Толстый серый кот.">
               </picture>
             </div>
             <div class="example__wrapper-thin">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/cat-thin-tablet.webp 1x, img/webp/cat-thin-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/webp/cat-thin-mobile.webp 1x, img/webp/cat-thin-mobile@2x.webp 2x">
+
                 <source media="(min-width: 768px)" srcset="img/cat-thin-tablet.png 1x, img/cat-thin-tablet@2x.png 2x">
                 <img class="example__cat-thin" src="img/cat-thin-mobile.png" srcset="img/cat-thin-mobile@2x.png" width="280" height="256" alt="Худой серый кот.">
               </picture>
             </div>
               <button class="example__toggle" type="button"></button>
-              <span class="visually-hidden">Ползунок слайдера влево или вправо.</span>
+              <span class="visually-hidden">Перемещение слайдера влево или вправо, показывает пример толстого или похудевшего кота.</span>
           </div>
         </div>
       </section>
@@ -166,7 +172,7 @@
       <div class="main-footer__wrapper">
         <div class="main-footer__logo">
           <a class="main-footer__logo-link">
-            <img class="main-footer__logo-text" src="img/logotype-text.svg" width="128" height="24"
+            <img class="main-footer__logo-text" src="img/logotype-text.svg" tabindex="0" width="128" height="24"
             alt="Название сайта Кэт энерджи.">
           </a>
         </div>
@@ -174,34 +180,29 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <div class="social__icon social__icon--vkontakte"></div>
+                <span class="social__icon social__icon--vkontakte"></span>
                 <span class="visually-hidden">Переход на социальную сеть вконтакте.</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <div class="social__icon social__icon--youtube"></div>
+                <span class="social__icon social__icon--youtube"></span>
                 <span class="visually-hidden">Переход на видеохостинг ютуб.</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                <div class="social__icon social__icon--telegram"></div>
+                <span class="social__icon social__icon--telegram"></span>
                 <span class="visually-hidden">Переход в мессенджер телеграмм.</span>
               </a>
             </li>
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <p class="copyright__title">HTML Academy
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+              <span class="copyright__icon"></span>
               <span class="visually-hidden">Переход на сайт html-academy.</span>
             </a>
-          </p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <div class="copyright__icon"></div>
-            <span class="visually-hidden">Переход на сайт html-academy.</span>
-          </a>
         </div>
       </div>
     </footer>
