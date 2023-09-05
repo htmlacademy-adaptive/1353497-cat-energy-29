@@ -6,10 +6,8 @@ import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
-import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
 import { stacksvg } from "gulp-stacksvg"
@@ -70,26 +68,16 @@ const createWebp = () => {
 
   // SVG
 
-export const svg = () =>
+const svg = () =>
   gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
   .pipe(svgo())
   .pipe(gulp.dest('build/img'));
 
-const makeStack = () => {
-    return gulp.src('source/img/*.svg')
+export const makeStack = () => {
+    return gulp.src('source/img/icons/*.svg')
       .pipe(stacksvg({ output: 'sprite' }))
       .pipe(gulp.dest('build/img'))
   }
-
-// export const sprite = () => {
-//   return gulp.src('source/img/icons/*.svg')
-//   .pipe(svgo())
-//   .pipe(svgstore({
-//   inlineSvg: true
-//   }))
-//   .pipe(rename('sprite.svg'))
-//   .pipe(gulp.dest('build/img'));
-//   }
 
   // Copy
 
