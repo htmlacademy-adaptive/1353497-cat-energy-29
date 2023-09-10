@@ -1,35 +1,41 @@
 .main-hero {
-  width: 280px;
-  margin: 0 auto;
-  text-align: center;
-  background-image: linear-gradient(#68b738d9 300px, #ffffff 300px), url("../../img/cat-background-mobile.png");
+  background-image: linear-gradient(#68b738d9, #68b738d9), url("../../img/cat-background-mobile.png"), linear-gradient(#4c4a4f, #4c4a4f);
   background-repeat: no-repeat;
+  background-position-x: center;
   background-size: auto 320px;
   margin-bottom: 20px;
-  padding: 0 20px;
 
   @media (min-resolution: 2dppx) {
-    background-image: linear-gradient(#68b738d9 300px, #ffffff 300px), url("../../img/cat-background-mobile@2x.png");
+    background-image: linear-gradient(#68b738d9, #68b738d9), url("../../img/cat-background-mobile.png"), linear-gradient(#4c4a4f, #4c4a4f);
     background-size: auto 320px;
   }
 
-  @media (min-width: @tablet-width) {
-    position: relative;
-    width: 708px;
+  &__wrapper {
+    width: 280px;
     margin: 0 auto;
-    padding: 0 30px;
-    background-image: none;
+    text-align: center;
+
+    @media (min-width: @tablet-width) {
+      position: relative;
+      width: 708px;
+      margin: 0 auto;
+      padding: 0 30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      position: relative;
+      width: 1220px;
+      min-height: 571px;
+      margin: 0 auto;
+      padding: 0 110px;
+      margin-bottom: 82px;
+      background-size: 720px;
+      background-repeat: no-repeat;
+    }
   }
 
-  @media (min-width: @desktop-width) {
-    position: relative;
-    width: 1220px;
-    min-height: 571px;
-    margin: 0 auto;
-    padding: 0 110px;
-    margin-bottom: 82px;
-    background-size: 720px;
-    background-repeat: no-repeat;
+  @media (min-width: @tablet-width) {
+    background-image: none;
   }
 
   &__logo-hero {
@@ -54,7 +60,7 @@
     font-size: 36px;
     line-height: 36px;
     font-weight: 400;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Tahoma", sans-serif;
     color: #ffffff;
     padding-top: 25px;
     padding-bottom: 27px;

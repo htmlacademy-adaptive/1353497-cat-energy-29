@@ -1,17 +1,17 @@
 .example {
   position: relative;
   background: #eaeaea;
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     background: linear-gradient(to top, #eaeaea 465px, transparent 465px, transparent 100%);
-    width: 768px;
+    min-width: 768px;
     margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1440px;
+    min-width: 1440px;
     margin: 0 auto;
     background: linear-gradient(to top, #eaeaea 462px, transparent 462px, transparent 100%);
   }
@@ -21,8 +21,9 @@
       position: absolute;
       content: "";
       top: 0;
-      left: 0;
-      width: 766px;
+      left: 50%;
+      width: 768px;
+      transform: translateX(-50%);
       border: 1px solid #d9d9d9;
     }
 
@@ -114,6 +115,7 @@
     margin-bottom: 40px;
 
     @media (min-width: @tablet-width) {
+      font-size: 60px;
       line-height: 60px;
       margin-bottom: 60px;
     }
@@ -150,7 +152,7 @@
   &__meaning {
     width: 62px;
     color: #444444;
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", "Tahoma", sans-serif;
     font-size: 12px;
     line-height: 12px;
     text-align: center;
@@ -242,7 +244,7 @@
 
   &__name {
     color: #444444;
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", "Tahoma", sans-serif;
     margin: 0;
     padding: 0;
     margin-bottom: 20px;

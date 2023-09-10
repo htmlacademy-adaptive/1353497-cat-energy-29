@@ -43,11 +43,6 @@
     text-transform: uppercase;
     background-color: #ffffff;
   }
-
-  // &:hover,
-  // &:active {
-  //   background-color: #999999;
-  // }
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -120,7 +115,12 @@
 }
 
 .main-nav--nojs .main-nav__list {
-  display: block;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .main-nav--nojs .site-list__item--active::after {

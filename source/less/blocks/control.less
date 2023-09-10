@@ -10,11 +10,7 @@
     padding-left: 45px;
     align-self: center;
 
-    &:active {
-      color: #2222224d;
-    }
-
-    @media (min-width: @desktop-width) {
+    @media (min-width: @tablet-width) {
       font-size: 20px;
       line-height: 20px;
     }
@@ -28,16 +24,9 @@
     height: 30px;
     border: 1px solid #cdcdcd;
     border-radius: 50%;
-
-    &:hover {
-      border: 1px solid #bababa;
-    }
-
-    &:active {
-      border: #bababa4d;
-    }
   }
 
+  //Псевдоэлемент кнопки
   &__input[type="radio"]:checked + &__mark-filter::before {
     position: absolute;
     content: "";
@@ -50,6 +39,26 @@
     border-radius: 50%;
   }
 
+  //Обводка кнопки при наведении
+  &__input[type="radio"] + &__mark-filter:hover {
+    border: 1px solid #bababa;
+  }
+
+  //Обводка кнопки при отключенном состоянии
+  &__input[type="radio"]:disabled + &__mark-filter {
+    border: 1px solid #bababa4d;
+  }
+
+  //Псевдоэлемент кнопки при отключенном состоянии
+  &__input[type="radio"]:disabled + &__mark-product::before {
+    border: 1px solid #68b7384d;
+  }
+
+  //Цвет текста при отключенном состоянии
+  &__input[type="radio"]:disabled + &__label {
+    color: #2222224d;
+  }
+
   &__mark-product {
     position: absolute;
     top: 0;
@@ -59,6 +68,7 @@
     border: 1px solid #cdcdcd;
   }
 
+  //Псевдоэлемент чекбокса
   &__input[type="checkbox"]:checked + &__mark-product::before {
     position: absolute;
     content: "";
@@ -69,7 +79,23 @@
     background: url("../img/sprite.svg#product-tick");
   }
 
-  &:active .control__input[type="radio"]:checked + &__mark-filter::before {
-    background-color: #68b7384d;
+  //Обводка чека при наведении
+  &__input[type="checkbox"] + &__mark-product:hover {
+    border: 1px solid #bababa;
+  }
+
+  //Обводка чека при отключенном состоянии
+  &__input[type="checkbox"]:disabled + &__mark-product {
+    border: 1px solid #bababa4d;
+  }
+
+  //Псевдоэлемент чека при отключенном состоянии
+  &__input[type="checkbox"]:disabled + &__mark-product::before {
+    border: 1px solid #68b7384d;
+  }
+
+  //Цвет текста при отключенном состоянии
+  &__input[type="checkbox"]:disabled + &__label {
+    color: #2222224d;
   }
 }

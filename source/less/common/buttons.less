@@ -1,12 +1,11 @@
-.button-products {
-  grid-column: 1/3;
-}
-
 .button {
   border: none;
 
   &__hero {
     background-color: @buttom-program-color;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
@@ -28,14 +27,14 @@
       left: 190px;
     }
 
-    &:hover {
-      background-color: #5eaa2f;
-    }
+    // &:hover {
+    //   background-color: #5eaa2f;
+    // }
 
-    &:active {
-      background-color: #5eaa2f;
-      color: #ffffff4d;
-    }
+    // &:active {
+    //   background-color: #5eaa2f;
+    //   color: #ffffff4d;
+    // }
   }
 
   &__application {
@@ -43,7 +42,7 @@
     margin: 0 auto;
     background-color: @buttom-program-color;
     text-transform: uppercase;
-    font-family: inherit;
+    font-family: "Oswald", "Tahoma", sans-serif;
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
@@ -76,6 +75,8 @@
 
   &__show-all {
     background-color: #f2f2f2;
+    font-size: 16px;
+    line-height: 20px;
     text-transform: uppercase;
     text-decoration: none;
     color: #444444;
@@ -83,6 +84,11 @@
     min-width: 280px;
     display: inline-block;
     text-align: center;
+
+    &:hover,
+    &:active {
+      background-color: #ebebeb;
+    }
 
     @media (min-width: @tablet-width) {
       min-width: 250px;
@@ -112,5 +118,14 @@
     @media (min-width: @desktop-width) {
       min-width: 244px;
     }
+  }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: #ffffff4d;
   }
 }

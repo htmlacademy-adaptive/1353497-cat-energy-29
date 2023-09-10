@@ -1,18 +1,29 @@
 .selection {
-  width: 320px;
   margin: 0 auto;
 
-  @media (min-width: @tablet-width) {
-    width: 768px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 1440px;
-    margin: 0 auto;
-  }
+  // @media (min-width: @desktop-width) {
+  //   width: 1440px;
+  //   margin: 0 auto;
+  // }
 
   &__wrapper {
+    width: 320px;
+    margin: 0 auto;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 320px;
+      height: 1px;
+      background-color: #d9d9d9;
+      margin-bottom: 27px;
+      // margin-left: -20px;
+
+      @media (min-width: @tablet-width) {
+        display: none;
+      }
+    }
+
     @media (min-width: @tablet-width) {
       width: 628px;
       margin: 0 auto;
@@ -21,25 +32,20 @@
 
     @media (min-width: @desktop-width) {
       width: 1220px;
+      flex-direction: column;
       margin: 0 auto;
       display: flex;
       column-gap: 80px;
-      height: 196px;
+      // height: 196px;
       margin-bottom: 70px;
     }
   }
 
-  &::before {
-    content: "";
-    display: block;
-    width: 320px;
-    height: 1px;
-    background-color: #d9d9d9;
-    margin-bottom: 27px;
-    // margin-left: -20px;
-
-    @media (min-width: @tablet-width) {
-      display: none;
+  &__form-filter-wrapper {
+    @media (min-width: @desktop-width) {
+      display: flex;
+      gap: 80px;
+      height: 196px;
     }
   }
 
@@ -52,16 +58,14 @@
     margin-bottom: 37px;
 
     @media (min-width: @tablet-width) {
+      font-size: 60px;
+      line-height: 60px;
       padding: 0;
-      margin-left: 70px;
     }
 
     @media (min-width: @desktop-width) {
       font-size: 60px;
       line-height: 60px;
-      // margin-left: 110px;
-      // margin-bottom: 55px;
-      padding: 65px 40px 54px;
     }
   }
 
@@ -74,14 +78,14 @@
     text-transform: uppercase;
 
     @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
       padding: 0;
-      margin-left: 70px;
     }
 
     @media (min-width: @desktop-width) {
       font-size: 20px;
       line-height: 30px;
-      margin-left: 110px;
       margin-bottom: 66px;
     }
   }

@@ -5,7 +5,17 @@
   width: 160px;
 
   &:hover .button-wrapper__icon {
-    background-image: url("../img/sprite.svg#icon-arrow-long");
+    mask-image: url("../img/sprite.svg#icon-arrow-long");
+    background-color: #000000;
+  }
+
+  &:active .button-wrapper__icon {
+    mask-image: url("../img/sprite.svg#icon-arrow-long");
+    background-color: #0000004d;
+  }
+
+  &:active .button-wrapper__link {
+    color: #0000004d;
   }
 
   @media (min-width: @tablet-width) {
@@ -39,22 +49,24 @@
       line-height: 20px;
     }
 
-    &:hover .button-wrapper__icon {
-      background-image: url("../img/sprite.svg#icon-arrow-long");
-    }
+    // &:hover .button-wrapper__icon {
+    //   mask-image: url("../img/sprite.svg#icon-arrow-long");
+    //   background-color: #000000;
+    // }
 
-    &:active .button-wrapper__icon {
-      opacity: 0.3;
-    }
+    // &:active .button-wrapper__icon {
+    //   opacity: 0.3;
+    // }
 
-    &:active {
-      opacity: 0.3;
-    }
+    // &:active {
+    //   opacity: 0.3;
+    // }
   }
 
   &__icon {
     display: block;
-    background-image: url("../img/sprite.svg#icon-arrow");
+    mask-image: url("../img/sprite.svg#icon-arrow");
+    background-color: #000000;
     width: 32px;
     height: 10px;
     align-self: center;
