@@ -2,12 +2,11 @@
   background-image: linear-gradient(#68b738d9, #68b738d9), url("../../img/cat-background-mobile.png"), linear-gradient(#4c4a4f, #4c4a4f);
   background-repeat: no-repeat;
   background-position-x: center;
-  background-size: auto 320px;
+  background-size: auto 302px;
   margin-bottom: 20px;
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(#68b738d9, #68b738d9), url("../../img/cat-background-mobile.png"), linear-gradient(#4c4a4f, #4c4a4f);
-    background-size: auto 320px;
   }
 
   &__wrapper {
@@ -20,6 +19,7 @@
       width: 708px;
       margin: 0 auto;
       padding: 0 30px;
+      margin-bottom: -3px;
     }
 
     @media (min-width: @desktop-width) {
@@ -28,13 +28,13 @@
       min-height: 571px;
       margin: 0 auto;
       padding: 0 110px;
-      margin-bottom: 82px;
       background-size: 720px;
       background-repeat: no-repeat;
     }
   }
 
   @media (min-width: @tablet-width) {
+    margin: 0;
     background-image: none;
   }
 
@@ -47,8 +47,8 @@
     @media (min-width: @desktop-width) {
       position: absolute;
       content: "";
-      top: 50px;
-      left: 555px;
+      bottom: 131px;
+      left: 557px;
       width: 552px;
       height: auto;
     }
@@ -62,8 +62,8 @@
     font-weight: 400;
     font-family: "Oswald", "Tahoma", sans-serif;
     color: #ffffff;
-    padding-top: 25px;
-    padding-bottom: 27px;
+    padding-top: 27px;
+    padding-bottom: 25px;
 
     @media (min-width: @tablet-width) {
       margin: 0;
@@ -79,7 +79,7 @@
 
     @media (min-width: @desktop-width) {
       margin: 0;
-      padding: 110px 80px 40px;
+      padding: 23px 80px 40px;
     }
   }
 }
@@ -100,7 +100,7 @@
     line-height: 20px;
     text-align: start;
     margin-left: 90px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: @desktop-width) {

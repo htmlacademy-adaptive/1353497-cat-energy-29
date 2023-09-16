@@ -25,7 +25,7 @@
         <a class="main-header__logo-link main-header__logo-text" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logotype-text-desktop.svg">
-            <img class="main-header__logo-text" src="img/logotype-text.svg" width="101" height="18"alt="Название сайта Кэт энерджи.">
+            <img class="main-header__logo-text" src="img/logotype-text.svg" width="101" height="18" alt="Название сайта Кэт энерджи.">
           </picture>
           <span class="visually-hidden">Переход на главную страниу Cat Enegy.</span>
         </a>
@@ -78,7 +78,7 @@
             <span class="visually-hidden">Переход на страницу с каталогом.</span>
           </div>
         </div>
-        <div  class="program__item">
+        <div class="program__item-pro">
             <h3 class="program__title program__title--pro">набор массы</h3>
           <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <div class="button-wrapper">
@@ -92,32 +92,33 @@
         <h2 class="properties__block-title">Как это работает</h2>
         <div class="properties__wrapper">
           <div class="properties__item">
-            <span class="properties__icon--leaf"></span>
+            <span class="properties__icon properties__icon--leaf"></span>
             <span class="visually-hidden">Изображение листочка на зеленом фоне.</span>
             <p class="properties__description">Функциональное питание содержит только полезные питательные вещества.</p>
           </div>
           <div class="properties__item">
-            <span class="properties__icon--water"></span>
+            <span class="properties__icon properties__icon--water"></span>
             <span class="visually-hidden">Изображение посуды с кипящей водой.</span>
             <p class="properties__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </div>
           <div class="properties__item">
-            <span class="properties__icon--cutlery"></span>
+            <span class="properties__icon properties__icon--cutlery"></span>
             <span class="visually-hidden">Изображение столовых вилки и ложки.</span>
             <p class="properties__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </div>
           <div class="properties__item">
-            <span class="properties__icon--scales"></span>
+            <span class="properties__icon properties__icon--scales"></span>
             <span class="visually-hidden">Изображение весов.</span>
-            <p class="properties__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="properties__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
           </div>
         </div>
       </section>
       <section class="example">
         <div class="example__wrapper">
-          <div class="example__story">
+          <div class="example__wrapper-values">
             <h2 class="example__block-title">Живой пример</h2>
             <P class="example__name">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</P>
+            <div class="example__wrapper-data">
               <div class="example__description">
                 <div class="example__item">
                   <span class="example__parameter">5 КГ</span>
@@ -127,34 +128,38 @@
                   <span class="example__parameter">60 ДНЕЙ</span>
                   <span class="example__meaning">затрачено времени</span>
                 </div>
-              <span class="example__expenses">Затраты на питание: 15 000 РУБ.</span>
+              </div>
+              <div class="example__expenses">
+                <span class="example__text">Затраты на питание:</span>
+                <span class="example__price">15 000 РУБ.</span>
+              </div>
             </div>
           </div>
-          <div class="example__slider">
-            <div class="example__wrapper-thick">
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/cat-thick-tablet.webp 1x, img/webp/cat-thick-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/webp/cat-thick-mobile.webp 1x, img/webp/cat-thick-mobile@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/cat-thick-tablet.png 1x, img/cat-thick-tablet@2x.png 2x">
-                <img class="example__cat-thick" src="img/cat-thick-mobile.png" srcset="img/cat-thick-mobile@2x.png" width="280" height="256" alt="Толстый серый кот.">
-              </picture>
-            </div>
-            <div class="example__wrapper-thin">
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/cat-thin-tablet.webp 1x, img/webp/cat-thin-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/webp/cat-thin-mobile.webp 1x, img/webp/cat-thin-mobile@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/cat-thin-tablet.png 1x, img/cat-thin-tablet@2x.png 2x">
-                <img class="example__cat-thin" src="img/cat-thin-mobile.png" srcset="img/cat-thin-mobile@2x.png" width="280" height="256" alt="Худой серый кот.">
-              </picture>
-            </div>
+            <div class="example__slider">
+              <div class="example__wrapper-thick">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/cat-thick-tablet.webp 1x, img/webp/cat-thick-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/webp/cat-thick-mobile.webp 1x, img/webp/cat-thick-mobile@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/cat-thick-tablet.png 1x, img/cat-thick-tablet@2x.png 2x">
+                  <img class="example__cat-thick" src="img/cat-thick-mobile.png" srcset="img/cat-thick-mobile@2x.png" width="280" height="256" alt="Толстый серый кот.">
+                </picture>
+              </div>
+              <div class="example__wrapper-thin">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/cat-thin-tablet.webp 1x, img/webp/cat-thin-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/webp/cat-thin-mobile.webp 1x, img/webp/cat-thin-mobile@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/cat-thin-tablet.png 1x, img/cat-thin-tablet@2x.png 2x">
+                  <img class="example__cat-thin" src="img/cat-thin-mobile.png" srcset="img/cat-thin-mobile@2x.png" width="280" height="256" alt="Худой серый кот.">
+                </picture>
+              </div>
               <button class="example__toggle" type="button"></button>
               <span class="visually-hidden">Перемещение слайдера влево или вправо, показывает пример толстого или похудевшего кота.</span>
-          </div>
+            </div>
         </div>
-      </section>
+        </section>
       <section class="contacts">
         <div class="contacts__wrapper">
-          <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__title">приглашаем <br> к сотрудничеству дилеров!</p>
           <div class="contacts__wrapper-adress">
             <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8</p>
             <p class="contacts__adress">Санкт-Петербург</p>
@@ -166,7 +171,7 @@
             src="https://yandex.ru/map-widget/v1/?feedback=map%2Fedit&feedback-context=map.controls&ll=30.323486%2C59.939334&z=16"
             width="100%" height="362" allowfullscreen title="Карта, на которой отмечено место нахождения компании Кэт энерджи.">
           </iframe>
-        <noscript>
+        <noscript>s
           <div class="map__background">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/webp/map-desktop.webp 1x, img/webp/map-desktop@2x.webp 2x">
@@ -184,8 +189,6 @@
       <div class="main-footer__wrapper">
         <div class="main-footer__logo">
           <a class="main-footer__logo-link" href="index.html" aria-label="Главная страница сайта Кэт энерджи">
-            <!-- <img class="main-footer__logo-text" src="img/logotype-text.svg" tabindex="0" width="128" height="24"
-            alt="Название сайта Кэт энерджи."> -->
             <svg width="128" height="24" viewBox="0 0 128 24" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_83854_353)">
               <path d="M1.6236 21.9574C0.489608 20.2815 -0.0733133 18.2722 0.0213584 16.2383V7.7617C-0.115966 5.70593 0.411707 3.66097 1.52346 1.94043C2.62499 0.612766 4.32737 0 6.83086 0C9.33436 0 10.9366 0.612766 11.938 1.73617C13.0252 3.15904 13.56 4.9407 13.4401 6.74043V8.78298H8.53324V6.43404C8.57287 5.73932 8.47057 5.04378 8.23282 4.39149C8.10574 4.12819 7.90433 3.90969 7.65449 3.76409C7.40465 3.61849 7.11781 3.55245 6.83086 3.57447C6.12989 3.57447 5.62919 3.77872 5.42891 4.28936C5.20237 5.015 5.10073 5.77516 5.12849 6.53617V17.4638C5.0756 18.2022 5.21373 18.9417 5.52905 19.6085C5.72933 20.1192 6.23003 20.3234 6.931 20.3234C7.63198 20.3234 8.03254 20.1192 8.23282 19.6085C8.4605 18.9183 8.56232 18.1914 8.53324 17.4638V15.0128H13.4401V17.0553C13.5419 18.8844 13.0103 20.6918 11.938 22.1617C10.9366 23.3872 9.23422 24 6.83086 24C4.42751 23.8979 2.62499 23.2851 1.6236 21.9574Z"/>
@@ -238,5 +241,5 @@
     </footer>
 
     <script src="js/script.js"></script>
-  </body>ss
+  </body>
 </html>

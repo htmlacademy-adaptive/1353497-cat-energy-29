@@ -20,8 +20,8 @@
 
   &__toggle {
     position: absolute;
-    top: -50px;
-    right: 0;
+    top: -46px;
+    right: 1px;
     width: 24px;
     height: 24px;
     display: block;
@@ -69,7 +69,7 @@
   }
 }
 
-.main-nav--opened .site-list {        //Переход с открытом меню в плашнетную и десктопную версии
+.main-nav--opened .site-list {
   @media (min-width: @tablet-width) {
     display: flex;
     gap: 33px;
@@ -82,10 +82,18 @@
 
 .main-nav--opened .site-list__item--active::after {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .main-nav--opened .site-list__item--active-main::after {
   display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {

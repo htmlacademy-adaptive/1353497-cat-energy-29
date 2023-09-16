@@ -6,13 +6,13 @@
   @media (min-width: @tablet-width) {
     width: 708px;
     margin: 0 auto;
-    margin-bottom: 104px;
+    margin-bottom: 103px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
     margin: 0 auto;
-    margin-bottom: 69px;
+    margin-bottom: 30px;
   }
 
   &__block-title {
@@ -28,6 +28,10 @@
       line-height: 60px;
       margin-bottom: 72px;
     }
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 70px;
+    }
   }
 
   &__description {
@@ -36,6 +40,7 @@
     font-family: "Lato", "Tahoma", sans-serif;
     margin: 0;
     padding: 0;
+    margin-top: 3px;
 
     @media (min-width: @tablet-width) {
       width: 245px;
@@ -59,7 +64,8 @@
     @media (min-width: @tablet-width) {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 37px;
+      row-gap: 37px;
+      column-gap: 58px;
       grid-template-rows: 280px;
     }
 
@@ -77,16 +83,16 @@
     @media (min-width: @tablet-width) {
       position: relative;
       flex-direction: column;
+      gap: 28px;
     }
 
     &::after {
       @media (min-width: @tablet-width) {
         position: absolute;
-        left: 93px;
-        top: 93px;
+        left: 116px;
+        top: 92px;
         color: #f2f2f2;
         font-size: 280px;
-        // font-family: ;
         counter-increment: section;
         content: counter(section);
         z-index: -1;
@@ -95,70 +101,28 @@
   }
 }
 
-.properties__icon--leaf {
-  background-image: url("../img/sprite.svg#icon_leaf");
+.properties__icon {
   width: 60px;
   height: 60px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 31px;
-  }
-
-  @media (min-width: @desktop-width) {
     width: 80px;
     height: 80px;
-    background-size: cover;
-    margin-bottom: 31px;
   }
+}
+
+.properties__icon--leaf {
+  background-image: url("../img/sprite.svg#icon_leaf");
 }
 
 .properties__icon--water {
   background-image: url("../img/sprite.svg#icon_water");
-  width: 60px;
-  height: 60px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 31px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 80px;
-    height: 80px;
-    background-size: cover;
-    margin-bottom: 31px;
-  }
 }
 
 .properties__icon--cutlery {
   background-image: url("../img/sprite.svg#icon_cutlery");
-  width: 60px;
-  height: 60px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 31px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 80px;
-    height: 80px;
-    background-size: cover;
-    margin-bottom: 31px;
-  }
 }
 
 .properties__icon--scales {
   background-image: url("../img/sprite.svg#icon_scales");
-  width: 60px;
-  height: 60px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 31px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 80px;
-    height: 80px;
-    background-size: cover;
-    margin-bottom: 31px;
-  }
 }
