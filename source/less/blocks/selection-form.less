@@ -1,28 +1,42 @@
 .selection-form {
-  padding: 0 20px;
-  margin-bottom: 24px;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 23px;
 
   @media (min-width: @tablet-width) {
+    width: 628px;
     padding: 0;
     margin-bottom: 72px;
   }
 
   @media (min-width: @desktop-width) {
-    flex: 1;
+    width: 570px;
+    margin: 0;
   }
 
   &__item {
     display: flex;
-    margin-bottom: 24px;
+    margin-bottom: 14px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #444444;
+    align-items: baseline;
+    gap: 14px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 19px;
+    }
 
     @media (min-width: @desktop-width) {
-      margin-bottom: 20px;
+      margin-bottom: 17px;
     }
   }
 
   &__field {
     color: #444444;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Tahoma", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -30,11 +44,15 @@
     text-transform: uppercase;
     flex: 1;
     border: 1px solid #e7e7e7;
-    padding: 14px 10px 13px 15px;
+    padding: 14px 10px 11px 15px;
 
-    @media (min-width: @desktop-width) {
+    @media (min-width: @tablet-width) {
       font-size: 20px;
       line-height: 20px;
+      padding: 10px 18px 10px 18px;
+    }
+
+    @media (min-width: @desktop-width) {
       padding: 11px 20px;
     }
 
@@ -49,21 +67,7 @@
 
   // Ошибка в поле при вводе данных
 
-  // &__item--error {
+  // &__item--error .selection-form__field {
   //   border: 1px solid #ff8282;
   // }
-
-  &__label {
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #444444;
-    margin-right: 13px;
-    padding: 14px 0;
-    padding-bottom: 13px;
-
-    @media (min-width: @desktop-width) {
-      font-size: 20px;
-      line-height: 20px;
-    }
-  }
 }

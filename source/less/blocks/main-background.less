@@ -1,12 +1,15 @@
 .main-background {
+  object-fit: cover;
+
   @media (min-width: @desktop-width) {
-    width: 1440px;
-    background: linear-gradient(to left, #68b738d9 720px, transparent 720px) no-repeat, url("..//..//img/cat-background-desktop.png") no-repeat right top;
-    background-size: auto 694px;
+    background: linear-gradient(to left, #68b738d9 50%, transparent 50%), url("..//..//img/cat-background-desktop.png") right top, linear-gradient(to left, #4c4a4f 50%, transparent 50%);
+    background-repeat: no-repeat;
+    background-size: auto 693px;
 
     @media (min-resolution: 2dppx) {
-      background: linear-gradient(to left, #68b738d9 720px, transparent 720px) no-repeat, url("..//..//img/cat-background-desktop@2x.png") no-repeat right top;
-      background-size: auto 694px;
+      background: linear-gradient(to left, #68b738d9 50%, transparent 50%), url("..//..//img/cat-background-desktop.png") right top, linear-gradient(to left, #4c4a4f 50%, transparent 50%);
+      background-repeat: no-repeat;
+      background-size: auto 693px;
     }
   }
 }

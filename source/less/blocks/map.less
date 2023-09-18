@@ -1,0 +1,30 @@
+.map {
+  position: relative;
+  width: 100%;
+}
+
+.map iframe {
+  border: none;
+  display: block;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
+}
+
+.map img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.map noscript {
+  display: block;
+  width: 100%;
+}

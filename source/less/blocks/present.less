@@ -1,9 +1,8 @@
 .present {
   background-image: linear-gradient(#68b738d9 100%, #ffffff 60%), url("../../img/cat-case-mobile.png");
   background-repeat: no-repeat;
-  background-size: cover;
   width: 280px;
-  height: 289px;
+  min-height: 289px;
   margin: 0 auto;
   margin-bottom: 35px;
   display: flex;
@@ -11,6 +10,7 @@
   align-items: center;
   gap: 50px;
   justify-content: flex-end;
+  object-fit: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(#68b738d9 100%, #ffffff 60%), url("../../img/cat-case-mobile@2x.png");
@@ -19,10 +19,10 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    padding: 0 73px;
+    padding: 0 78px;
     box-sizing: border-box;
     width: 707px;
-    height: 200px;
+    min-height: 200px;
     background-image: linear-gradient(#68b738d9 100%, #ffffff 60%), url("../../img/cat-case-tablet.png");
     justify-content: flex-start;
     gap: 264px;
@@ -37,9 +37,9 @@
   @media (min-width: @desktop-width) {
     flex-direction: column;
     width: 245px;
-    height: 288px;
+    min-height: 288px;
     padding: 53px 73px 0;
-    gap: 46px;
+    gap: 50px;
     background-image: linear-gradient(#68b738d9 100%, #ffffff 60%), url("../../img/cat-case-desktop.png");
 
     @media (min-resolution: 2dppx) {
@@ -52,7 +52,7 @@
     display: block;
     color: #ffffff;
     text-align: center;
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", "Tahoma", sans-serif;
     font-size: 16px;
     line-height: 20px;
     width: 161px;
@@ -61,6 +61,11 @@
 
     @media (min-width: @tablet-width) {
       margin: 0;
+      text-align: left;
+    }
+
+    @media (min-width: @desktop-width) {
+      text-align: center;
     }
   }
 
