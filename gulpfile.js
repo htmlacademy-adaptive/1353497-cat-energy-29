@@ -10,6 +10,7 @@ import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import del from 'del';
 import browser from 'browser-sync';
+import terser from 'gulp-terser';
 import { stacksvg } from "gulp-stacksvg"
 
 // Styles
@@ -39,8 +40,10 @@ export const html = () => {
 
 const scripts = () => {
   return gulp.src('source/js/script.js')
+  .pipe(terser())
+  .pipe(rename('script.min.js'))
   .pipe(gulp.dest('build/js'))
-  .pipe(browser.stream());
+  // .pipe(browser.stream());
   }
 
   // Images
@@ -125,7 +128,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
-  gulp.watch('source/js/script.js', gulp.series(scripts));
+  gulp.watch('source/js/*.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
   }
 
@@ -141,7 +144,6 @@ export const build = gulp.series(
   scripts,
   svg,
   makeStack,
-  // sprite,
   createWebp
   ),
   );
@@ -158,7 +160,6 @@ export const build = gulp.series(
   scripts,
   svg,
   makeStack,
-  // sprite,
   createWebp
   ),
   gulp.series(
