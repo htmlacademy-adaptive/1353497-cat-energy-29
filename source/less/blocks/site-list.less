@@ -2,8 +2,10 @@
   @media (min-width: @tablet-width) {
     min-width: 436px;
   }
+}
 
-  &__item::before {
+.site-list__item {
+  &::before {
     position: absolute;
     content: "";
     left: 0;
@@ -20,7 +22,7 @@
     }
   }
 
-  &__item--active {
+  &--active {
     position: relative;
 
     &::after {
@@ -38,7 +40,7 @@
     }
   }
 
-  &__item--active-main {
+  &--active-main {
     position: relative;
 
     &::after {
@@ -57,47 +59,47 @@
       }
     }
   }
+}
 
-  &__link {
-    display: block;
-    padding: 23px 24px;
-    font-size: 20px;
-    line-height: 20px;
-    color: #000000;
-    text-transform: uppercase;
-    text-decoration: none;
+.site-list__link {
+  display: block;
+  padding: 23px 24px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
 
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-
-    @media (min-width: @tablet-width) {
-      font-size: 18px;
-      line-height: 24px;
-      padding: 0;
-    }
-
-    @media (min-width: @desktop-width) {
-      font-size: 20px;
-      line-height: 20px;
-    }
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0;
   }
 
-  &__main-link {
-    @media (min-width: @desktop-width) {
-      color: #ffffff;
-    }
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 
-    &:hover {
-      opacity: 0.6;
-    }
+  &:hover {
+    opacity: 0.6;
+  }
 
-    &:active {
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.site-list__main-link {
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

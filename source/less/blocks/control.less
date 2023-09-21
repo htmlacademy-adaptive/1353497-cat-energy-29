@@ -2,122 +2,123 @@
   position: relative;
   display: flex;
   min-height: 30px;
+}
 
-  &__label {
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #444444;
-    margin-left: 45px;
-    align-self: center;
+.control__label {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #444444;
+  margin-left: 45px;
+  align-self: center;
 
-    @media (min-width: @tablet-width) {
-      font-size: 20px;
-      line-height: 20px;
-      margin-left: 60px;
-      align-self: flex-end;
-    }
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 60px;
+    align-self: flex-end;
   }
+}
 
-  &__mark-filter {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #cdcdcd;
-    border-radius: 50%;
+.control__mark-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
 
-    @media (min-width: @tablet-width) {
-      width: 40px;
-      height: 40px;
-    }
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
   }
+}
 
-  //Псевдоэлемент кнопки
-  &__input[type="radio"]:checked + &__mark-filter::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    transform: translate(50%, 50%);
-    width: 15px;
-    height: 15px;
-    background-color: #68b738;
-    border-radius: 50%;
+.control__mark-product {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #cdcdcd;
 
-    @media (min-width: @tablet-width) {
-      width: 20px;
-      height: 20px;
-    }
+  @media (min-width: @tablet-width) {
+    width: 38px;
+    height: 38px;
   }
+}
 
-  //Обводка кнопки при наведении
-  &__input[type="radio"] + &__mark-filter:hover {
-    border: 1px solid #bababa;
+
+//Псевдоэлемент кнопки
+.control__input[type="radio"]:checked + .control__mark-filter::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  transform: translate(50%, 50%);
+  width: 15px;
+  height: 15px;
+  background-color: #68b738;
+  border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 20px;
+    height: 20px;
   }
+}
 
-  //Обводка кнопки при отключенном состоянии
-  &__input[type="radio"]:disabled + &__mark-filter {
-    border: 1px solid #bababa4d;
+//Обводка кнопки при наведении
+.control__input[type="radio"] + .control__mark-filter:hover {
+  border: 1px solid #bababa;
+}
+
+//Обводка кнопки при отключенном состоянии
+.control__input[type="radio"]:disabled + .control__mark-filter {
+  border: 1px solid #bababa4d;
+}
+
+//Псевдоэлемент кнопки при отключенном состоянии
+.control__input[type="radio"]:disabled + .control__mark-product::before {
+  border: 1px solid #68b7384d;
+}
+
+//Цвет текста при отключенном состоянии
+.control__input[type="radio"]:disabled + .control__label {
+  color: #2222224d;
+}
+
+//Псевдоэлемент чекбокса
+.control__input[type="checkbox"]:checked + .control__mark-product::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 26px;
+  height: 26px;
+  background: url("../img/sprite.svg#product-tick");
+
+  @media (min-width: @tablet-width) {
+    width: 38px;
+    height: 37px;
   }
+}
 
-  //Псевдоэлемент кнопки при отключенном состоянии
-  &__input[type="radio"]:disabled + &__mark-product::before {
-    border: 1px solid #68b7384d;
-  }
+//Обводка чека при наведении
+.control__input[type="checkbox"] + .control__mark-product:hover {
+  border: 1px solid #bababa;
+}
 
-  //Цвет текста при отключенном состоянии
-  &__input[type="radio"]:disabled + &__label {
-    color: #2222224d;
-  }
+//Обводка чека при отключенном состоянии
+.control__input[type="checkbox"]:disabled + .control__mark-product {
+  border: 1px solid #bababa4d;
+}
 
-  &__mark-product {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 28px;
-    height: 28px;
-    border: 1px solid #cdcdcd;
+//Псевдоэлемент чека при отключенном состоянии
+.control__input[type="checkbox"]:disabled + .control__mark-product::before {
+  border: 1px solid #68b7384d;
+}
 
-    @media (min-width: @tablet-width) {
-      width: 38px;
-      height: 38px;
-    }
-  }
-
-  //Псевдоэлемент чекбокса
-  &__input[type="checkbox"]:checked + &__mark-product::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    width: 26px;
-    height: 26px;
-    background: url("../img/sprite.svg#product-tick");
-
-    @media (min-width: @tablet-width) {
-      width: 38px;
-      height: 37px;
-    }
-  }
-
-  //Обводка чека при наведении
-  &__input[type="checkbox"] + &__mark-product:hover {
-    border: 1px solid #bababa;
-  }
-
-  //Обводка чека при отключенном состоянии
-  &__input[type="checkbox"]:disabled + &__mark-product {
-    border: 1px solid #bababa4d;
-  }
-
-  //Псевдоэлемент чека при отключенном состоянии
-  &__input[type="checkbox"]:disabled + &__mark-product::before {
-    border: 1px solid #68b7384d;
-  }
-
-  //Цвет текста при отключенном состоянии
-  &__input[type="checkbox"]:disabled + &__label {
-    color: #2222224d;
-  }
+//Цвет текста при отключенном состоянии
+.control__input[type="checkbox"]:disabled + .control__label {
+  color: #2222224d;
 }

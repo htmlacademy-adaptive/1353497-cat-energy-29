@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="./css/style.min.css">
@@ -54,24 +55,27 @@
         </nav>
     </header>
       <main class="main-container">
-        <section class="selection">
-          <div class="selection__wrapper">
-              <div class="selection__form-filter-wrapper">
-                <div class="selection-form">
-                  <h1 class="selection__main-title">Подбор программы</h1>
-                  <p class="selection__form-item">заполните анкету, и мы подберем<br>
-                    программу питания для вашего кота</p>
-                  <label class="selection-form__item selection-form__item--error">имя:*
+        <div class="main-container__title">
+          <h1 class="main-container__form-title">Подбор программы</h1>
+          <p class="main-container__filling">заполните анкету, и мы подберем<br>
+            программу питания для вашего кота</p>
+        </div>
+        <form class="selection" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="selection__wrapper">
+                <fieldset class="selection-form">
+                  <legend class="visually-hidden">Информация о коте.</legend>
+                  <label class="selection-form__item">имя:*
                     <input class="selection-form__field" name="name" placeholder="барсик">
                   </label>
-                  <label class="selection-form__item selection-form__item--error">вес (кг):*
+                  <label class="selection-form__item">вес (кг):*
                     <input class="selection-form__field" name="weight" placeholder="7">
                   </label>
-                  <label class="selection-form__item selection-form__item--error">возраст (лет):
+                  <label class="selection-form__item">возраст (лет):
                     <input class="selection-form__field" name="age" placeholder="7">
                   </label>
-                </div>
-                <div class="selection-filter">
+                </fieldset>
+                <fieldset class="selection-filter">
+                  <legend class="visually-hidden">Тип программы.</legend>
                   <ul class="selection-filter__list">
                     <li class="selection-filter__item">
                       <label class="control">
@@ -95,78 +99,70 @@
                       </label>
                     </li>
                   </ul>
-                </div>
+                </fieldset>
               </div>
-          </div>
-          <div class="selection-contacts">
-            <div class="title-wrapper">
-              <h2 class="title-wrapper__text-contacts">
-                Контактные данные (владельца кота)
-              </h2>
-            </div>
-            <div class="selection-contacts__wrapper">
-              <label class="selection-contacts__item selection-contacts__item--error">E-mail:*
-                <input class="selection-contacts__field" name="mail" placeholder="kuklachev@gmail.com">
-                <span class="selection-contacts__icon selection-contacts__icon--mail"></span>
-              </label>
-              <label class="selection-contacts__item selection-contacts__item--error">Телефон:*
-                <span class="selection-contacts__icon selection-contacts__icon--phone"></span>
-                <input class="selection-contacts__field" name="phone" placeholder="8 (960) 900-60-90">
-              </label>
-            </div>
-          </div>
-          <div class="selection-comment">
-            <div class="title-wrapper">
-              <h2 class="title-wrapper__text-comment">Комментарий</h2>
-            </div>
-            <div class="selection-comment__wrapper">
-              <label class="selection-comment__item">
-                <input class="selection-comment__field" name="comment" placeholder="расскажите обо всех повадках кота">
-              </label>
-            </div>
-          </div>
-          <div class="additional">
-            <div class="title-wrapper">
-              <h2 class="title-wrapper__text-additional">Дополнительно:</h2>
-            </div>
-              <ul class="additional__list">
-                <li class="additional__item">
-                  <label class="control">
-                      <input class="control__input visually-hidden" type="checkbox" name="sugar" checked="">
+              <fieldset class="selection-contacts">
+                  <legend class="selection-contacts__text-contacts">Контактные данные (владельца кота)</legend>
+                <div class="selection-contacts__wrapper">
+                  <label class="selection-contacts__item">E-mail:*
+                    <input class="selection-contacts__field" name="mail" placeholder="kuklachev@gmail.com">
+                    <span class="selection-contacts__icon selection-contacts__icon--mail"></span>
+                  </label>
+                  <label class="selection-contacts__item ">Телефон:*
+                    <span class="selection-contacts__icon selection-contacts__icon--phone"></span>
+                    <input class="selection-contacts__field" name="phone" placeholder="8 (960) 900-60-90">
+                  </label>
+                </div>
+              </fieldset>
+              <fieldset class="selection-comment">
+                  <legend class="selection-comment__text-comment">Комментарий</legend>
+                  <label class="selection-comment__wrapper">
+                  <textarea class="selection-comment__field" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+                </label>
+              </fieldset>
+              <fieldset class="additional">
+                  <legend class="additional__text-additional">Дополнительно</legend>
+                <ul class="additional__list">
+                  <li class="additional__item">
+                    <label class="control">
+                        <input class="control__input visually-hidden" type="checkbox" name="sugar" checked="">
+                        <span class="control__mark-product"></span>
+                        <span class="control__label">сахарозаменитель</span>
+                    </label>
+                  </li>
+                  <li class="additional__item">
+                    <label class="control">
+                      <input class="control__input visually-hidden" type="checkbox" name="water">
                       <span class="control__mark-product"></span>
-                      <span class="control__label">сахарозаменитель</span>
-                  </label>
-                </li>
-                <li class="additional__item">
-                  <label class="control">
-                    <input class="control__input visually-hidden" type="checkbox" name="water">
-                    <span class="control__mark-product"></span>
-                    <span class="control__label">питьевая вода</span>
-                  </label>
-                </li>
-                <li class="additional__item">
-                  <label class="control">
-                    <input class="control__input visually-hidden" type="checkbox" name="milk">
-                    <span class="control__mark-product"></span>
-                    <span class="control__label">молоко</span>
-                  </label>
-                <li class="additional__item">
-                  <label class="control">
-                    <input class="control__input visually-hidden" type="checkbox" name="vitamins">
-                    <span class="control__mark-product"></span>
-                    <span class="control__label">витамины</span>
-                  </label>
-                </li>
-              </ul>
+                      <span class="control__label">питьевая вода</span>
+                    </label>
+                  </li>
+                  <li class="additional__item">
+                    <label class="control">
+                      <input class="control__input visually-hidden" type="checkbox" name="milk">
+                      <span class="control__mark-product"></span>
+                      <span class="control__label">молоко</span>
+                    </label>
+                  <li class="additional__item">
+                    <label class="control">
+                      <input class="control__input visually-hidden" type="checkbox" name="vitamins">
+                      <span class="control__mark-product"></span>
+                      <span class="control__label">витамины</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            <div class="application-wrapper">
+              <button class="button button--application" type="submit">отправить заявку</button>
+              <span class="stats-legend">
+                * — Обязательные поля
+              </span>
             </div>
-          <div class="application-wrapper">
-            <button class="button button__application" type="submit">отправить заявку</button>
-            <span class="stats-legend">
-              * — Обязательные поля
-            </span>
-          </div>
-        </section>
+        </form>
         <section class="contacts contacts--background">
+          <h2 class="visually-hidden">
+            Контактная информация.
+          </h2>
           <div class="contacts__wrapper">
             <p class="contacts__title">приглашаем <br> к сотрудничеству дилеров!</p>
             <div class="contacts__wrapper-adress">
@@ -188,7 +184,7 @@
               <source type="image/webp" srcset="img/webp/map-mobile.webp 1x, img/webp/map-mobile@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
-              <img src="img/map-mobile.png" srcset="img/map-mobile@2x.png" width="100%" height="362" alt="Карта, на которой отмечено место нахождения компании Кэт энерджи.">
+              <img src="img/map-mobile.png" srcset="img/map-mobile@2x.png" width="320" height="362" alt="Карта, на которой отмечено место нахождения компании Кэт энерджи.">
             </picture>
           </div>
         </noscript>

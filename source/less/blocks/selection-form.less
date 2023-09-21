@@ -1,73 +1,75 @@
 .selection-form {
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 23px;
+  padding: 0;
+  border: none;
+  margin-bottom: 9px;
 
   @media (min-width: @tablet-width) {
     width: 628px;
     padding: 0;
-    margin-bottom: 72px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: @desktop-width) {
     width: 570px;
     margin: 0;
   }
+}
 
-  &__item {
-    display: flex;
-    margin-bottom: 14px;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #444444;
-    align-items: baseline;
-    gap: 14px;
+.selection-form__item {
+  display: flex;
+  margin-bottom: 14px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #444444;
+  align-items: baseline;
+  gap: 14px;
 
-    @media (min-width: @tablet-width) {
-      font-size: 20px;
-      line-height: 20px;
-      margin-bottom: 19px;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin-bottom: 17px;
-    }
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 19px;
   }
 
-  &__field {
-    color: #444444;
-    font-family: "Oswald", "Tahoma", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    text-transform: uppercase;
-    flex: 1;
-    border: 1px solid #e7e7e7;
-    padding: 14px 10px 11px 15px;
+  @media (min-width: @desktop-width) {
+    margin-bottom: 17px;
+  }
+}
 
-    @media (min-width: @tablet-width) {
-      font-size: 20px;
-      line-height: 20px;
-      padding: 10px 18px 10px 18px;
-    }
+.selection-form__field {
+  color: #444444;
+  font-family: "Oswald", "Tahoma", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  flex: 1;
+  border: 1px solid #e7e7e7;
+  padding: 14px 10px 11px 15px;
 
-    @media (min-width: @desktop-width) {
-      padding: 11px 20px;
-    }
-
-    &:hover {
-      border: 1px solid #cdcdcd;
-    }
-
-    &:focus {
-      border: 1px solid #444444;
-    }
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px 18px 10px 18px;
   }
 
-  // Ошибка в поле при вводе данных
+  @media (min-width: @desktop-width) {
+    padding: 11px 20px;
+  }
 
-  // &__item--error .selection-form__field {
-  //   border: 1px solid #ff8282;
-  // }
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 1px solid #444444;
+  }
+}
+
+// Ошибка в поле при вводе данных
+
+.selection-form__item--error .selection-form__field {
+  border: 1px solid #ff8282;
 }
