@@ -1,64 +1,64 @@
 .main-footer {
   background-color: #f2f2f2;
+}
 
-  &__wrapper {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 36px 0;
-    width: 280px;
-    box-sizing: border-box;
+.main-footer__wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 36px 0;
+  width: 280px;
+  box-sizing: border-box;
 
-    @media (min-width: @tablet-width) {
-      width: 708px;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 56px 0;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: 1220px;
-      padding: 66px 0 66px;
-    }
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 0;
   }
 
-  &__logo {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 17px;
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding: 66px 0 66px;
+  }
+}
 
-    @media (min-width: @tablet-width) {
-      padding: 0;
-    }
+.main-footer__logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 17px;
 
-    &::after {
-      position: absolute;
-      content: "";
-      min-width: 280px;
-      height: 1px;
-      bottom: 0;
-      background-color: #d9d9d9;
-
-      @media (min-width: @tablet-width) {
-        display: none;
-      }
-    }
+  @media (min-width: @tablet-width) {
+    padding: 0;
   }
 
-  &__logo-link {
-    fill: #111111;
-    margin-top: 3px;
+  &::after {
+    position: absolute;
+    content: "";
+    min-width: 280px;
+    height: 1px;
+    bottom: 0;
+    background-color: #d9d9d9;
 
-    &:hover,
-    &:focus {
-      fill: #000000;
+    @media (min-width: @tablet-width) {
+      display: none;
     }
+  }
+}
 
-    &:active {
-      fill: #6b6b6b;
-    }
+.main-footer__logo-link {
+  fill: #111111;
+  margin-top: 3px;
+
+  &:hover,
+  &:focus {
+    fill: #000000;
+  }
+
+  &:active {
+    fill: #6b6b6b;
   }
 }
