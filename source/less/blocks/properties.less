@@ -6,7 +6,7 @@
   @media (min-width: @tablet-width) {
     width: 708px;
     margin: 0 auto;
-    margin-bottom: 103px;
+    margin-bottom: 8px;
   }
 
   @media (min-width: @desktop-width) {
@@ -67,12 +67,11 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 37px;
     column-gap: 58px;
-    grid-template-rows: 280px;
+    grid-template-rows: 1fr;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 280px;
     gap: 80px;
   }
 }
@@ -85,6 +84,7 @@
     position: relative;
     flex-direction: column;
     gap: 28px;
+    min-height: 280px;
   }
 
   &::after {

@@ -9,22 +9,24 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
-    padding: 10px 44px;
+    padding: 10px 64px;
     min-width: 192px;
     display: inline-block;
+    box-sizing: border-box;
 
     @media (min-width: @tablet-width) {
-      position: absolute;
-      top: 229px;
-      left: 90px;
+      position: relative;
       padding: 14px 26px;
       font-size: 20px;
       line-height: 26px;
+      left: -142px;
+      bottom: 583px;
+      max-width: 244px;
     }
 
     @media (min-width: @desktop-width) {
-      top: 267px;
-      left: 80px;
+      top: 0;
+      left: -408px;
     }
   }
 
