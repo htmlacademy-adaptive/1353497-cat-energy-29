@@ -11,21 +11,9 @@
   <path d="M61.9496 51.8567H16.0929C15.4201 51.8567 14.8741 51.3142 14.8741 50.6456C14.8741 49.9771 15.4201 49.4346 16.0929 49.4346H61.9496C62.6223 49.4346 63.1683 49.9771 63.1683 50.6456C63.1683 51.3142 62.6229 51.8567 61.9496 51.8567Z" fill="white"/>
   </svg>
 
-  <!-- Вертикальная линия слайдера планшета-->
-  <svg viewBox="0 0 40 512" id="slider-line-tablet" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="18" width="4" height="512" rx="2" fill="#666666"/>
-  </svg>
-
-  <!-- Вертикальная линия слайдера мобилки-->
-  <svg viewBox="0 0 40 256" id="slider-line" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="18" width="4" height="256" rx="2" fill="#666666"/>
-  </svg>
-
-  <!-- Круг слайдера -->
-  <svg viewBox="0 0 40 40" id="slider-circle" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M16 11L8 20L16 29V11Z" fill="#666666"/>
-  <path d="M32 20L24 11V29L32 20Z" fill="#666666"/>
-  <rect x="1" y="1" width="38" height="38" rx="19" stroke="#666666" stroke-width="2"/>
+  <!-- Стрелки слайдера -->
+  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40' id="slider-circle">
+  <path d='m16 11-8 9 8 9V11Zm16 9-8-9v18l8-9Z'/>
   </svg>
 
   <!-- Стрелка длинная -->

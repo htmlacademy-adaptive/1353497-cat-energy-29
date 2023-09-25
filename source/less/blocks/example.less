@@ -62,31 +62,6 @@
     margin: 0 auto;
     padding: 0;
   }
-
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: -274px;
-    right: 50%;
-    width: 40px;
-    height: 256px;
-    mask-image: url("../img/sprite.svg#slider-line");
-    background-color: #666666;
-    transform: translate(50%);
-    z-index: 1;
-
-    @media (min-width: @tablet-width) {
-      height: 512px;
-      bottom: -507px;
-      mask-image: url("../img/sprite.svg#slider-line-tablet");
-      background-color: #666666;
-    }
-
-    @media (min-width: @desktop-width) {
-      right: -280px;
-      top: 0;
-    }
-  }
 }
 
 .example__wrapper-data {
@@ -262,19 +237,6 @@
   margin: 0 auto;
   width: 280px;
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 50%;
-    width: 38px;
-    height: 38px;
-    background: #ffffff;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-  }
-
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(2, 280px);
     margin: 0 auto;
@@ -315,25 +277,49 @@
   }
 }
 
-.example__toggle {
+.slider__curtain {
   position: absolute;
-  content: "";
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40px;
-  height: 256px;
-  mask-image: url("../img/sprite.svg#slider-circle");
-  background-color: #666666;
-  border: none;
-  z-index: 2;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  margin: 0 -2px;
+  width: 4px;
+  height: 100%;
+  border-radius: 2px;
+  color: var(--curtain-color, #666666);
+  background-color: currentColor;
+  cursor: col-resize;
+  transition: color 0.2s, opacity 0.2s;
+  margin-left: 50%;
 
   &:hover {
-    background-color: #68b738;
+    --curtain-color: #68b738;
   }
 
   &:active {
-    background-color: #5fac2f99;
+    opacity: 0.6;
+  }
+}
+
+.example__toggle {
+  box-sizing: border-box;
+  display: grid;
+  margin: -18px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  color: inherit;
+  border: 2px solid currentColor;
+  border-radius: 20px;
+  background-color: #ffffff;
+  cursor: col-resize;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: currentColor;
+    mask-image: url("../img/sprite.svg#slider-circle");
   }
 }
 
